@@ -100,7 +100,7 @@
           }
         ],
         "networkSecurityGroup": {
-          "id": "[resourceId('Microsoft.Network/networkSecurityGroups', 'NetworkSecurityGroup')]"
+          "id": "[resourceId('Microsoft.Network/networkSecurityGroups', 'HashcatNSG')]"
         }
       }
     },
