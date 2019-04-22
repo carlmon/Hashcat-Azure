@@ -8,7 +8,7 @@ This is a template for setting up and deploying [hashcat](https://hashcat.net/) 
 Once deployed, connect to the server with SSH and use hashcat from the commandline. See the [Hashcat Wiki](https://hashcat.net/wiki/) for details and examples.
 
 ## How it works
-The deployment will create an Ubuntu Server 18.10 LTS instance on Azure NV-series virtual machine. The deployment process executes a custom script to [install NVIDIA GRID drivers](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/n-series-driver-setup#install-grid-drivers-on-nv-or-nvv2-series-vms) as well as the latest released version of hashcat.
+The deployment will create an Ubuntu Server 18.10 LTS instance on an Azure NV-series virtual machine. The deployment process executes a custom script to [install NVIDIA GRID drivers](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/n-series-driver-setup#install-grid-drivers-on-nv-or-nvv2-series-vms) as well as the latest released version of hashcat.
 
 ## Benchmarks
 * [NV6 Standard](benchmarks/Standard_NV6.txt)
