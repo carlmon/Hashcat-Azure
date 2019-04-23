@@ -2,7 +2,7 @@
 
 # Install required packages
 apt-get update 2>error
-apt-get install -y build-essential p7zip-full 2>error # Not installing 'ubuntu-desktop'
+apt-get install -y build-essential 2>error # Not installing 'ubuntu-desktop'
 
 # Blacklist nouveau drivers
 cat <<EOT >> /etc/modprobe.d/nouveau.conf
@@ -18,11 +18,7 @@ cp /etc/nvidia/gridd.conf.template /etc/nvidia/gridd.conf
 sed -e "\$aIgnoreSP=FALSE" /etc/nvidia/gridd.conf
 
 # Set up hashcat
-wget https://hashcat.net/files/hashcat-5.1.0.7z
-7z x hashcat-5.1.0.7z
+wget https://hashcat.net/files/hashcat-5.1.0.tar.gz
+tar -xf hashcat-5.1.0.tar.gz
 cd hashcat-5.1.0
-cp hashcat64.bin /usr/bin/
-ln -s /usr/bin/hashcat64.bin /usr/bin/hashcat
-cp -Rv OpenCL/ /usr/bin/
-cp hashcat.hcstat2 /usr/bin/
-cp hashcat.hctune /usr/bin/
+make && make install
