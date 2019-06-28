@@ -17,8 +17,11 @@ chmod +x NVIDIA-Linux-x86_64-grid.run
 cp /etc/nvidia/gridd.conf.template /etc/nvidia/gridd.conf
 sed -e "\$aIgnoreSP=FALSE" /etc/nvidia/gridd.conf
 
-# Set up hashcat
+# Install Hashcat
 wget https://hashcat.net/files/hashcat-5.1.0.tar.gz
 tar -xf hashcat-5.1.0.tar.gz
 cd hashcat-5.1.0
 make && make install
+
+# Install John the Ripper
+snap install john-the-ripper

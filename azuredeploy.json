@@ -9,7 +9,7 @@
     },
     "vmSize": {
       "type": "string",
-      "defaultValue": "Standard_NV6",
+      "defaultValue": "Standard_NV6_Promo",
       "metadata": {
         "description": "VM size for the hashcat server. (see https://azureprice.net/)"
       },
@@ -29,7 +29,7 @@
       "minLength": 1
     },
     "adminPublicKey": {
-      "type": "secureString",
+      "type": "string",
       "minLength": 1
     }
   },
