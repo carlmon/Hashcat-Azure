@@ -1,685 +1,683 @@
-Will run 12 OpenMP threads
-
 Benchmarking: descrypt, traditional crypt(3) [DES 256/256 AVX2]... (6xOMP) DONE
-Many salts:	50528K c/s real, 8463K c/s virtual
-Only one salt:	36741K c/s real, 6195K c/s virtual
+Many salts:	49643K c/s real, 8385K c/s virtual
+Only one salt:	37109K c/s real, 6216K c/s virtual
 
 Benchmarking: bsdicrypt, BSDI crypt(3) ("_J9..", 725 iterations) [DES 256/256 AVX2]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 725
-Many salts:	1735K c/s real, 290733 c/s virtual
-Only one salt:	1626K c/s real, 273842 c/s virtual
+Many salts:	1588K c/s real, 275255 c/s virtual
+Only one salt:	1622K c/s real, 271240 c/s virtual
 
 Benchmarking: md5crypt, crypt(3) $1$ (and variants) [MD5 256/256 AVX2 8x3]... (6xOMP) DONE
-Many salts:	466560 c/s real, 78150 c/s virtual
-Only one salt:	465408 c/s real, 78088 c/s virtual
+Many salts:	459648 c/s real, 78038 c/s virtual
+Only one salt:	467712 c/s real, 78475 c/s virtual
 
 Benchmarking: md5crypt-long, crypt(3) $1$ (and variants) [MD5 32/64]... (6xOMP) DONE
-Raw:	40224 c/s real, 6771 c/s virtual
+Raw:	39168 c/s real, 6649 c/s virtual
 
 Benchmarking: bcrypt ("$2a$05", 32 iterations) [Blowfish 32/64 X3]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 32
-Raw:	6534 c/s real, 1107 c/s virtual
+Raw:	6469 c/s real, 1101 c/s virtual
 
 Benchmarking: scrypt (16384, 8, 1) [Salsa20/8 128/128 AVX]... (6xOMP) DONE
 Speed for cost 1 (N) of 16384, cost 2 (r) of 8, cost 3 (p) of 1
-Raw:	217 c/s real, 36.9 c/s virtual
+Raw:	217 c/s real, 36.8 c/s virtual
 
 Benchmarking: LM [DES 256/256 AVX2]... (6xOMP) DONE
-Raw:	112951K c/s real, 18983K c/s virtual
+Raw:	114966K c/s real, 19322K c/s virtual
 
 Benchmarking: AFS, Kerberos AFS [DES 48/64 4K]... DONE
-Short:	464384 c/s real, 464384 c/s virtual
-Long:	1817K c/s real, 1817K c/s virtual
+Short:	467200 c/s real, 467200 c/s virtual
+Long:	1822K c/s real, 1822K c/s virtual
 
 Benchmarking: tripcode [DES 256/256 AVX2]... (6xOMP) DONE
-Raw:	21135K c/s real, 3878K c/s virtual
+Raw:	22118K c/s real, 3978K c/s virtual
 
 Benchmarking: AndroidBackup [PBKDF2-SHA1 256/256 AVX2 8x AES]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 10000
-Raw:	6283 c/s real, 1053 c/s virtual
+Raw:	6144 c/s real, 1053 c/s virtual
 
 Benchmarking: adxcrypt [IBM/Toshiba 4690 - ADXCRYPT 32/64]... (6xOMP) DONE
-Raw:	62291K c/s real, 24013K c/s virtual
+Raw:	62291K c/s real, 24105K c/s virtual
 
 Benchmarking: agilekeychain, 1Password Agile Keychain [PBKDF2-SHA1 AES 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 1000
-Raw:	122304 c/s real, 20486 c/s virtual
+Raw:	116530 c/s real, 20050 c/s virtual
 
 Benchmarking: aix-ssha1, AIX LPA {ssha1} [PBKDF2-SHA1 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 64
-Many salts:	1617K c/s real, 273275 c/s virtual
-Only one salt:	1592K c/s real, 267189 c/s virtual
+Many salts:	1621K c/s real, 271111 c/s virtual
+Only one salt:	1577K c/s real, 264168 c/s virtual
 
 Benchmarking: aix-ssha256, AIX LPA {ssha256} [PBKDF2-SHA256 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 64
-Many salts:	674112 c/s real, 113486 c/s virtual
-Only one salt:	672960 c/s real, 113292 c/s virtual
+Many salts:	683904 c/s real, 114748 c/s virtual
+Only one salt:	685056 c/s real, 114176 c/s virtual
 
 Benchmarking: aix-ssha512, AIX LPA {ssha512} [PBKDF2-SHA512 256/256 AVX2 4x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 64
-Many salts:	298368 c/s real, 49977 c/s virtual
-Only one salt:	292032 c/s real, 48998 c/s virtual
+Many salts:	296544 c/s real, 49755 c/s virtual
+Only one salt:	291744 c/s real, 48950 c/s virtual
 
 Benchmarking: andOTP [SHA256 32/64]... (6xOMP) DONE
-Raw:	1179K c/s real, 196936 c/s virtual
+Raw:	1113K c/s real, 191868 c/s virtual
 
 Benchmarking: ansible, Ansible Vault [PBKDF2-SHA256 HMAC-256 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 10000
-Raw:	4992 c/s real, 827 c/s virtual
+Raw:	4896 c/s real, 822 c/s virtual
 
 Benchmarking: argon2 [Blake2 AVX]... (6xOMP) DONE
 Speed for cost 1 (t) of 3, cost 2 (m) of 4096, cost 3 (p) of 1, cost 4 (type [0:Argon2d 1:Argon2i]) of 0 and 1
-Raw:	830 c/s real, 140 c/s virtual
+Raw:	838 c/s real, 140 c/s virtual
 
 Benchmarking: as400-des, AS/400 DES [DES 32/64]... DONE
-Raw:	407002 c/s real, 69218 c/s virtual
+Raw:	423572 c/s real, 70713 c/s virtual
 
 Benchmarking: as400-ssha1, AS400-SaltedSHA1 [sha1(utf16be(space_pad_10(uc($s)).$p)) (IBM AS/400 SHA1) 256/256 AVX2 8x1]... DONE
-Many salts:	12559K c/s real, 12559K c/s virtual
-Only one salt:	10493K c/s real, 10493K c/s virtual
+Many salts:	13288K c/s real, 13288K c/s virtual
+Only one salt:	11081K c/s real, 11193K c/s virtual
 
 Benchmarking: asa-md5, Cisco ASA [md5($p.$s) (Cisco ASA) 256/256 AVX2 8x3]... DONE
-Many salts:	28973K c/s real, 28973K c/s virtual
-Only one salt:	18920K c/s real, 19111K c/s virtual
+Many salts:	29161K c/s real, 29456K c/s virtual
+Only one salt:	19071K c/s real, 19071K c/s virtual
 
 Benchmarking: AxCrypt [PBKDF2-SHA512/SHA1 AES 32/64]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 1337 and 60000
-Raw:	443 c/s real, 74.0 c/s virtual
+Raw:	443 c/s real, 73.7 c/s virtual
 
 Benchmarking: AzureAD [PBKDF2-SHA256 256/256 AVX2 8x]... (6xOMP) DONE
-Many salts:	448512 c/s real, 75634 c/s virtual
-Only one salt:	440832 c/s real, 73717 c/s virtual
+Many salts:	456960 c/s real, 76542 c/s virtual
+Only one salt:	442368 c/s real, 74098 c/s virtual
 
 Benchmarking: BestCrypt (SHA-256 + AES XTS mode) [Jetico BestCrypt (.jbc) PKCS12 PBE (Whirlpool / SHA-1 to SHA-512) 32/64]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 16384
-Raw:	762 c/s real, 130 c/s virtual
+Raw:	792 c/s real, 132 c/s virtual
 
 Benchmarking: bfegg, Eggdrop [Blowfish 32/64]... (6xOMP) DONE
-Raw:	159744 c/s real, 26713 c/s virtual
+Raw:	155120 c/s real, 26375 c/s virtual
 
 Benchmarking: Bitcoin, Bitcoin Core [SHA512 AES 256/256 AVX2 4x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 177864
-Raw:	233 c/s real, 39.2 c/s virtual
+Raw:	233 c/s real, 39.1 c/s virtual
 
 Benchmarking: BitLocker, BitLocker [SHA-256 AES 32/64]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 1048576
-Raw:	14.0 c/s real, 2.3 c/s virtual
+Raw:	13.5 c/s real, 2.3 c/s virtual
 
 Benchmarking: bitshares, BitShares Wallet [SHA-512 64/64]... (6xOMP) DONE
-Many salts:	5615K c/s real, 943801 c/s virtual
-Only one salt:	5142K c/s real, 870140 c/s virtual
+Many salts:	5695K c/s real, 949248 c/s virtual
+Only one salt:	5071K c/s real, 859639 c/s virtual
 
 Benchmarking: Bitwarden, Bitwarden Password Manager [PBKDF2-SHA256 AES 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 5000
-Raw:	10048 c/s real, 1674 c/s virtual
+Raw:	10048 c/s real, 1672 c/s virtual
 
 Benchmarking: BKS [PKCS12 PBE 256/256 AVX2 8x]... (6xOMP) DONE
-Raw:	122880 c/s real, 20582 c/s virtual
+Raw:	120470 c/s real, 20378 c/s virtual
 
 Benchmarking: Blackberry-ES10 (101x) [SHA-512 256/256 AVX2 4x]... (6xOMP) DONE
-Many salts:	400896 c/s real, 67604 c/s virtual
-Only one salt:	403968 c/s real, 67215 c/s virtual
+Many salts:	396166 c/s real, 67023 c/s virtual
+Only one salt:	395520 c/s real, 66473 c/s virtual
 
 Benchmarking: WoWSRP, Battlenet [SHA1 32/64 GMP-exp]... (6xOMP) DONE
-Many salts:	587025 c/s real, 101872 c/s virtual
-Only one salt:	611328 c/s real, 102571 c/s virtual
+Many salts:	625152 c/s real, 104365 c/s virtual
+Only one salt:	597671 c/s real, 100944 c/s virtual
 
 Benchmarking: Blockchain, My Wallet (v2 x5000) [PBKDF2-SHA1 AES 256/256 AVX2 8x]... (6xOMP) DONE
-Raw:	12567 c/s real, 2116 c/s virtual
+Raw:	12567 c/s real, 2110 c/s virtual
 
 Benchmarking: chap, iSCSI CHAP authentication / EAP-MD5 [MD5 32/64]... (6xOMP) DONE
-Many salts:	36790K c/s real, 6162K c/s virtual
-Only one salt:	28581K c/s real, 4787K c/s virtual
+Many salts:	35893K c/s real, 6052K c/s virtual
+Only one salt:	27635K c/s real, 4676K c/s virtual
 
 Benchmarking: Clipperz, SRP [SHA256 32/64 GMP-exp]... (6xOMP) DONE
-Raw:	270700 c/s real, 46577 c/s virtual
+Raw:	282624 c/s real, 47104 c/s virtual
 
 Benchmarking: cloudkeychain, 1Password Cloud Keychain [PBKDF2-SHA512 256/256 AVX2 4x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 40000 and 50000
-Raw:	461 c/s real, 77.0 c/s virtual
+Raw:	451 c/s real, 75.7 c/s virtual
 
 Benchmarking: dynamic=md5($p) [256/256 AVX2 8x3]... DONE
-Raw:	49654K c/s real, 49654K c/s virtual
+Raw:	50137K c/s real, 50137K c/s virtual
 
 Benchmarking: cq, ClearQuest [CQWeb]... (6xOMP) DONE
-Many salts:	442564K c/s real, 75266K c/s virtual
-Only one salt:	58982K c/s real, 15928K c/s virtual
+Many salts:	438632K c/s real, 73968K c/s virtual
+Only one salt:	59177K c/s real, 15938K c/s virtual
 
 Benchmarking: CRC32 [CRC32 32/64 CRC-32C AVX]... DONE
 Speed for cost 1 (version [0:CRC-32 1:CRC-32C]) of 0
-Many salts:	142999K c/s real, 142999K c/s virtual
-Only one salt:	61587K c/s real, 61587K c/s virtual
+Many salts:	142475K c/s real, 142475K c/s virtual
+Only one salt:	60645K c/s real, 60645K c/s virtual
 
 Benchmarking: sha1crypt, NetBSD's sha1crypt [PBKDF1-SHA1 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 64000 and 40000
-Raw:	2609 c/s real, 439 c/s virtual
+Raw:	2609 c/s real, 438 c/s virtual
 
 Benchmarking: sha256crypt, crypt(3) $5$ (rounds=5000) [SHA256 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 5000
-Raw:	11377 c/s real, 1914 c/s virtual
+Raw:	11377 c/s real, 1908 c/s virtual
 
 Benchmarking: sha512crypt, crypt(3) $6$ (rounds=5000) [SHA512 256/256 AVX2 4x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 5000
-Raw:	7750 c/s real, 1309 c/s virtual
+Raw:	7895 c/s real, 1313 c/s virtual
 
 Benchmarking: Citrix_NS10, Netscaler 10 [SHA1 256/256 AVX2 8x]... (6xOMP) DONE
-Many salts:	81788K c/s real, 13909K c/s virtual
-Only one salt:	60702K c/s real, 10100K c/s virtual
+Many salts:	127647K c/s real, 21310K c/s virtual
+Only one salt:	58736K c/s real, 9822K c/s virtual
 
 Benchmarking: dahua, "MD5 based authentication" Dahua [MD5 32/64]... DONE
-Raw:	4606K c/s real, 4606K c/s virtual
+Raw:	4577K c/s real, 4624K c/s virtual
 
 Benchmarking: dashlane, Dashlane Password Manager [AES PBKDF2-SHA1 256/256 AVX2 8x]... (6xOMP) DONE
-Raw:	6171 c/s real, 1034 c/s virtual
+Raw:	6023 c/s real, 1022 c/s virtual
 
 Benchmarking: diskcryptor, DiskCryptor [PBKDF2-SHA512 256/256 AVX2 4x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 1000
-Raw:	19770 c/s real, 3311 c/s virtual
+Raw:	19200 c/s real, 3226 c/s virtual
 
 Benchmarking: Django (x10000) [PBKDF2-SHA256 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 10000
-Raw:	4942 c/s real, 832 c/s virtual
+Raw:	4894 c/s real, 825 c/s virtual
 
 Benchmarking: django-scrypt [Salsa20/8 128/128 AVX]... (6xOMP) DONE
 Speed for cost 1 (N) of 14, cost 2 (r) of 8, cost 3 (p) of 1
-Raw:	216 c/s real, 36.6 c/s virtual
+Raw:	216 c/s real, 36.4 c/s virtual
 
 Benchmarking: dmd5, DIGEST-MD5 C/R [MD5 32/64]... (6xOMP) DONE
-Many salts:	10469K c/s real, 1750K c/s virtual
-Only one salt:	9289K c/s real, 1579K c/s virtual
+Many salts:	10432K c/s real, 1750K c/s virtual
+Only one salt:	9584K c/s real, 1600K c/s virtual
 
 Benchmarking: dmg, Apple DMG [PBKDF2-SHA1 256/256 AVX2 8x 3DES/AES]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 1000, cost 2 (version) of 2 and 1
-Raw:	48048 c/s real, 8048 c/s virtual
+Raw:	47904 c/s real, 7984 c/s virtual
 
 Benchmarking: dominosec, Lotus Notes/Domino 6 More Secure Internet Password [8/64]... (6xOMP) DONE
-Many salts:	1755K c/s real, 293096 c/s virtual
-Only one salt:	1122K c/s real, 190922 c/s virtual
+Many salts:	1645K c/s real, 277978 c/s virtual
+Only one salt:	1143K c/s real, 191197 c/s virtual
 
 Benchmarking: dominosec8, Lotus Notes/Domino 8 [8/64]... (6xOMP) DONE
-Raw:	4716 c/s real, 795 c/s virtual
+Raw:	4608 c/s real, 785 c/s virtual
 
 Benchmarking: DPAPImk, DPAPI masterkey file v1 and v2 [SHA1/MD4 PBKDF2-(SHA1/SHA512)-DPAPI-variant 3DES/AES256 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 24000
-Raw:	2535 c/s real, 425 c/s virtual
+Raw:	2512 c/s real, 424 c/s virtual
 
 Benchmarking: dragonfly3-32, DragonFly BSD $3$ w/ bug, 32-bit [SHA256 32/64]... (6xOMP) DONE
-Many salts:	21410K c/s real, 3592K c/s virtual
-Only one salt:	15897K c/s real, 2676K c/s virtual
+Many salts:	21003K c/s real, 3518K c/s virtual
+Only one salt:	15857K c/s real, 2669K c/s virtual
 
 Benchmarking: dragonfly3-64, DragonFly BSD $3$ w/ bug, 64-bit [SHA256 32/64]... (6xOMP) DONE
-Many salts:	21173K c/s real, 3552K c/s virtual
-Only one salt:	16192K c/s real, 2716K c/s virtual
+Many salts:	21293K c/s real, 3590K c/s virtual
+Only one salt:	16086K c/s real, 2699K c/s virtual
 
 Benchmarking: dragonfly4-32, DragonFly BSD $4$ w/ bugs, 32-bit [SHA512 64/64]... (6xOMP) DONE
-Many salts:	15376K c/s real, 2571K c/s virtual
-Only one salt:	12463K c/s real, 2101K c/s virtual
+Many salts:	14466K c/s real, 2460K c/s virtual
+Only one salt:	12225K c/s real, 2068K c/s virtual
 
 Benchmarking: dragonfly4-64, DragonFly BSD $4$ w/ bugs, 64-bit [SHA512 64/64]... (6xOMP) DONE
-Many salts:	15218K c/s real, 2544K c/s virtual
-Only one salt:	12582K c/s real, 2111K c/s virtual
+Many salts:	14999K c/s real, 2525K c/s virtual
+Only one salt:	12486K c/s real, 2098K c/s virtual
 
 Benchmarking: Drupal7, $S$ (x16385) [SHA512 256/256 AVX2 4x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 16384
-Raw:	2496 c/s real, 420 c/s virtual
+Raw:	2518 c/s real, 421 c/s virtual
 
 Benchmarking: eCryptfs (65536 iterations) [SHA512 256/256 AVX2 4x]... (6xOMP) DONE
 Raw:	628 c/s real, 106 c/s virtual
 
 Benchmarking: eigrp, EIGRP MD5 / HMAC-SHA-256 authentication [MD5/SHA-256 32/64]... (6xOMP) DONE
 Speed for cost 1 (algorithm [2:MD5 3:HMAC-SHA-256]) of 2
-Many salts:	22662K c/s real, 3867K c/s virtual
-Only one salt:	18733K c/s real, 3127K c/s virtual
+Many salts:	22720K c/s real, 3850K c/s virtual
+Only one salt:	18567K c/s real, 3120K c/s virtual
 
 Benchmarking: electrum, Electrum Wallet [SHA256 AES / PBKDF2-SHA512 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (kdf [1:SHA256 2:PBKDF2-SHA512]) of 1 and 2
-Raw:	25663 c/s real, 4312 c/s virtual
+Raw:	25536 c/s real, 4284 c/s virtual
 
 Benchmarking: EncFS [PBKDF2-SHA1 256/256 AVX2 8x AES]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 181474
-Raw:	345 c/s real, 58.4 c/s virtual
+Raw:	352 c/s real, 58.6 c/s virtual
 
 Benchmarking: enpass, Enpass Password Manager [PBKDF2-SHA1 256/256 AVX2 8x]... (6xOMP) DONE
-Raw:	2584 c/s real, 439 c/s virtual
+Raw:	2609 c/s real, 436 c/s virtual
 
 Benchmarking: EPI, EPiServer SID [SHA1 32/64]... (6xOMP) DONE
-Many salts:	40402K c/s real, 6745K c/s virtual
-Only one salt:	25092K c/s real, 4296K c/s virtual
+Many salts:	40009K c/s real, 6690K c/s virtual
+Only one salt:	26738K c/s real, 4463K c/s virtual
 
 Benchmarking: EPiServer [SHA1/SHA256 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (hash type [1:SHA1 2:SHA256]) of 1
-Many salts:	66772K c/s real, 11166K c/s virtual
-Only one salt:	69181K c/s real, 11568K c/s virtual
+Many salts:	65200K c/s real, 10866K c/s virtual
+Only one salt:	66502K c/s real, 11120K c/s virtual
 
 Benchmarking: ethereum, Ethereum Wallet [PBKDF2-SHA256/scrypt Keccak 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 262144 and 1024, cost 2 (kdf [0:PBKDF2-SHA256 1:scrypt 2:PBKDF2-SHA256 presale]) of 0
 Warning: "Many salts" test limited: 8/256
-Many salts:	380 c/s real, 63.4 c/s virtual
+Many salts:	376 c/s real, 62.9 c/s virtual
 Only one salt:	188 c/s real, 31.7 c/s virtual
 
 Benchmarking: fde, Android FDE [PBKDF2-SHA1 256/256 AVX2 8x SHA256/AES]... (6xOMP) DONE
-Raw:	30415 c/s real, 5154 c/s virtual
+Raw:	31001 c/s real, 5166 c/s virtual
 
 Benchmarking: Fortigate256, FortiOS256 [SHA256 32/64]... (6xOMP) DONE
-Many salts:	24551K c/s real, 4105K c/s virtual
-Only one salt:	19501K c/s real, 3266K c/s virtual
+Many salts:	24711K c/s real, 4132K c/s virtual
+Only one salt:	19034K c/s real, 3226K c/s virtual
 
 Benchmarking: Fortigate, FortiOS [SHA1 32/64]... (6xOMP) DONE
-Many salts:	42289K c/s real, 7071K c/s virtual
-Only one salt:	30253K c/s real, 5067K c/s virtual
+Many salts:	42657K c/s real, 7121K c/s virtual
+Only one salt:	30001K c/s real, 5016K c/s virtual
 
 Benchmarking: FormSpring [sha256($s.$p) 256/256 AVX2 8x]... DONE
-Many salts:	7822K c/s real, 7822K c/s virtual
-Only one salt:	6582K c/s real, 6648K c/s virtual
+Many salts:	7301K c/s real, 7301K c/s virtual
+Only one salt:	6830K c/s real, 6830K c/s virtual
 
 Benchmarking: FVDE, FileVault 2 [PBKDF2-SHA256 AES 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 41000 and 70400
-Raw:	876 c/s real, 146 c/s virtual
+Raw:	876 c/s real, 147 c/s virtual
 
 Benchmarking: geli, FreeBSD GELI [PBKDF2-SHA512 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 256 and 512
-Raw:	48285 c/s real, 8223 c/s virtual
+Raw:	48665 c/s real, 8205 c/s virtual
 
 Benchmarking: gost, GOST R 34.11-94 [64/64]... (6xOMP) DONE
-Raw:	3187K c/s real, 538378 c/s virtual
+Raw:	3205K c/s real, 534272 c/s virtual
 
 Benchmarking: gpg, OpenPGP / GnuPG Secret Key [32/64]... (6xOMP) DONE
 Speed for cost 1 (s2k-count) of 65536, cost 2 (hash algorithm [1:MD5 2:SHA1 3:RIPEMD160 8:SHA256 9:SHA384 10:SHA512 11:SHA224]) of 2, cost 3 (cipher algorithm [1:IDEA 2:3DES 3:CAST5 4:Blowfish 7:AES128 8:AES192 9:AES256 10:Twofish 11:Camellia128 12:Camellia192 13:Camellia256]) of 3
-Raw:	72504 c/s real, 12185 c/s virtual
+Raw:	69018 c/s real, 11838 c/s virtual
 
 Benchmarking: HAVAL-128-4 [32/64]... DONE
-Raw:	2817K c/s real, 2817K c/s virtual
+Raw:	2792K c/s real, 2792K c/s virtual
 
 Benchmarking: HAVAL-256-3 [32/64]... DONE
-Raw:	4075K c/s real, 4116K c/s virtual
+Raw:	4102K c/s real, 4102K c/s virtual
 
 Benchmarking: hdaa, HTTP Digest access authentication [MD5 256/256 AVX2 8x3]... DONE
-Many salts:	8117K c/s real, 8117K c/s virtual
-Only one salt:	7306K c/s real, 7306K c/s virtual
+Many salts:	8129K c/s real, 8129K c/s virtual
+Only one salt:	7341K c/s real, 7341K c/s virtual
 
 Benchmarking: hMailServer [sha256($s.$p) 256/256 AVX2 8x]... DONE
-Many salts:	7862K c/s real, 7941K c/s virtual
-Only one salt:	6884K c/s real, 6884K c/s virtual
+Many salts:	7664K c/s real, 7664K c/s virtual
+Only one salt:	6780K c/s real, 6780K c/s virtual
 
 Benchmarking: hsrp, "MD5 authentication" HSRP, HSRPv2, VRRP, GLBP [MD5 32/64]... (6xOMP) DONE
-Many salts:	23384K c/s real, 3923K c/s virtual
-Only one salt:	13492K c/s real, 2237K c/s virtual
+Many salts:	23334K c/s real, 3921K c/s virtual
+Only one salt:	13197K c/s real, 2218K c/s virtual
 
 Benchmarking: IKE, PSK [HMAC MD5/SHA1 32/64]... (6xOMP) DONE
 Speed for cost 1 (hash algorithm used for hmac [1:MD5 2:SHA1]) of 1 and 2
-Raw:	4108K c/s real, 689395 c/s virtual
+Raw:	4042K c/s real, 676045 c/s virtual
 
 Benchmarking: ipb2, Invision Power Board 2.x [MD5 256/256 AVX2 8x3]... (6xOMP) DONE
-Many salts:	75718K c/s real, 12704K c/s virtual
-Only one salt:	43352K c/s real, 7360K c/s virtual
+Many salts:	76013K c/s real, 12690K c/s virtual
+Only one salt:	42762K c/s real, 7297K c/s virtual
 
 Benchmarking: itunes-backup, Apple iTunes Backup [PBKDF2-SHA1 AES 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (version) of 9 and 10, cost 2 (iteration count) of 10000
-Raw:	5907 c/s real, 997 c/s virtual
+Raw:	5907 c/s real, 990 c/s virtual
 
 Benchmarking: iwork, Apple iWork '09 or newer [PBKDF2-SHA1 AES 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 100000
-Raw:	1280 c/s real, 214 c/s virtual
+Raw:	1244 c/s real, 211 c/s virtual
 
 Benchmarking: KeePass [SHA256 AES 32/64]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 50000 and 6000, cost 2 (version) of 1 and 2, cost 3 (algorithm [0=AES, 1=TwoFish, 2=ChaCha]) of 0
-Raw:	605 c/s real, 104 c/s virtual
+Raw:	600 c/s real, 102 c/s virtual
 
 Benchmarking: keychain, Mac OS X Keychain [PBKDF2-SHA1 3DES 256/256 AVX2 8x]... (6xOMP) DONE
-Raw:	61440 c/s real, 10205 c/s virtual
+Raw:	58550 c/s real, 9972 c/s virtual
 
 Benchmarking: keyring, GNOME Keyring [SHA256 AES 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 3221
-Raw:	31316 c/s real, 5279 c/s virtual
+Raw:	31015 c/s real, 5219 c/s virtual
 
 Benchmarking: keystore, Java KeyStore [SHA1 256/256 AVX2 8x]... (6xOMP) DONE
 Warning: "Many salts" test limited: 19/256
-Many salts:	7183K c/s real, 1205K c/s virtual
-Only one salt:	5991K c/s real, 1178K c/s virtual
+Many salts:	7183K c/s real, 1203K c/s virtual
+Only one salt:	5839K c/s real, 1165K c/s virtual
 
 Benchmarking: known_hosts, HashKnownHosts HMAC-SHA1 [SHA1 32/64]... (6xOMP) DONE
-Many salts:	20594K c/s real, 3472K c/s virtual
-Only one salt:	16171K c/s real, 2717K c/s virtual
+Many salts:	20797K c/s real, 3513K c/s virtual
+Only one salt:	16047K c/s real, 2724K c/s virtual
 
 Benchmarking: krb4, Kerberos v4 TGT [DES 32/64]... DONE
-Short:	281850 c/s real, 281850 c/s virtual
-Long:	749538 c/s real, 749538 c/s virtual
+Short:	282560 c/s real, 279762 c/s virtual
+Long:	750433 c/s real, 750433 c/s virtual
 
 Benchmarking: krb5, Kerberos v5 TGT [3DES 32/64]... DONE
-Raw:	67089 c/s real, 67089 c/s virtual
+Raw:	66996 c/s real, 66996 c/s virtual
 
 Benchmarking: krb5asrep, Kerberos 5 AS-REP etype 17/18/23 [MD4 HMAC-MD5 RC4 / PBKDF2 HMAC-SHA1 AES 256/256 AVX2 8x]... (6xOMP) DONE
-Many salts:	2456K c/s real, 411401 c/s virtual
-Only one salt:	1866K c/s real, 314181 c/s virtual
+Many salts:	2428K c/s real, 408137 c/s virtual
+Only one salt:	1876K c/s real, 313878 c/s virtual
 
 Benchmarking: krb5pa-sha1, Kerberos 5 AS-REQ Pre-Auth etype 17/18 [PBKDF2-SHA1 256/256 AVX2 8x]... (6xOMP) DONE
-Raw:	15500 c/s real, 2583 c/s virtual
+Raw:	15360 c/s real, 2579 c/s virtual
 
 Benchmarking: krb5tgs, Kerberos 5 TGS etype 23 [MD4 HMAC-MD5 RC4]... (6xOMP) DONE
-Many salts:	5220K c/s real, 871596 c/s virtual
-Only one salt:	3039K c/s real, 518727 c/s virtual
+Many salts:	5148K c/s real, 866779 c/s virtual
+Only one salt:	2793K c/s real, 485066 c/s virtual
 
 Benchmarking: krb5-17, Kerberos 5 DB etype 17 [DES / PBKDF2-SHA1 256/256 AVX2 8x AES]... (6xOMP) DONE
-Raw:	30720 c/s real, 5155 c/s virtual
+Raw:	29491 c/s real, 5091 c/s virtual
 
 Benchmarking: krb5-18, Kerberos 5 DB etype 18 [DES / PBKDF2-SHA1 256/256 AVX2 8x AES]... (6xOMP) DONE
-Raw:	15456 c/s real, 2597 c/s virtual
+Raw:	15264 c/s real, 2573 c/s virtual
 
 Benchmarking: krb5-3, Kerberos 5 DB etype 3 [DES / PBKDF2-SHA1 256/256 AVX2 8x AES]... (6xOMP) DONE
-Many salts:	6377K c/s real, 1070K c/s virtual
-Only one salt:	5529K c/s real, 923138 c/s virtual
+Many salts:	6340K c/s real, 1060K c/s virtual
+Only one salt:	5566K c/s real, 924661 c/s virtual
 
 Benchmarking: kwallet, KDE KWallet [SHA1 / PBKDF2-SHA512 256/256 AVX2 4x]... (6xOMP) DONE
-Raw:	17108 c/s real, 3119 c/s virtual
+Raw:	19390 c/s real, 3274 c/s virtual
 
 Benchmarking: lp, LastPass offline [PBKDF2-SHA256 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 500
-Warning: "Many salts" test limited: 126/256
-Many salts:	96768 c/s real, 16236 c/s virtual
-Only one salt:	95809 c/s real, 16181 c/s virtual
+Warning: "Many salts" test limited: 124/256
+Many salts:	94289 c/s real, 15925 c/s virtual
+Only one salt:	95232 c/s real, 15898 c/s virtual
 
 Benchmarking: lpcli, LastPass CLI [PBKDF2-SHA256 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 1234
-Many salts:	39552 c/s real, 6614 c/s virtual
-Only one salt:	38304 c/s real, 6470 c/s virtual
+Many salts:	38016 c/s real, 6443 c/s virtual
+Only one salt:	38448 c/s real, 6461 c/s virtual
 
 Benchmarking: leet [SHA-512(256/256 AVX2 4x) + Whirlpool(OpenSSL/64)]... (6xOMP) DONE
-Warning: "Many salts" test limited: 43/256
-Many salts:	8288K c/s real, 1381K c/s virtual
-Only one salt:	7517K c/s real, 1297K c/s virtual
+Warning: "Many salts" test limited: 41/256
+Many salts:	7826K c/s real, 1336K c/s virtual
+Only one salt:	7131K c/s real, 1258K c/s virtual
 
 Benchmarking: lotus5, Lotus Notes/Domino 5 [8/64 X3]... (6xOMP) DONE
-Raw:	3151K c/s real, 527068 c/s virtual
+Raw:	3096K c/s real, 516957 c/s virtual
 
 Benchmarking: lotus85, Lotus Notes/Domino 8.5 [8/64]... (6xOMP) DONE
-Many salts:	693888 c/s real, 116229 c/s virtual
-Only one salt:	673536 c/s real, 113389 c/s virtual
+Many salts:	659328 c/s real, 111561 c/s virtual
+Only one salt:	627072 c/s real, 107744 c/s virtual
 
 Benchmarking: LUKS [PBKDF2-SHA1 256/256 AVX2 8x]... (6xOMP) DONE
-Raw:	326 c/s real, 54.9 c/s virtual
+Raw:	316 c/s real, 54.1 c/s virtual
 
 Benchmarking: MD2 [MD2 32/64]... (6xOMP) DONE
-Raw:	933120 c/s real, 155520 c/s virtual
+Raw:	834432 c/s real, 141910 c/s virtual
 
 Benchmarking: mdc2, MDC-2 [MDC-2DES]... (6xOMP) DONE
-Raw:	9308K c/s real, 1572K c/s virtual
+Raw:	9228K c/s real, 1543K c/s virtual
 
 Benchmarking: MediaWiki [md5($s.md5($p)) 256/256 AVX2 8x3]... DONE
-Many salts:	33220K c/s real, 33220K c/s virtual
-Only one salt:	14017K c/s real, 14017K c/s virtual
+Many salts:	33327K c/s real, 33327K c/s virtual
+Only one salt:	13886K c/s real, 13886K c/s virtual
 
 Benchmarking: monero, monero Wallet [Pseudo-AES / ChaCha / Various 32/64]... (6xOMP) DONE
-Raw:	28.0 c/s real, 4.7 c/s virtual
+Raw:	26.0 c/s real, 4.5 c/s virtual
 
 Benchmarking: money, Microsoft Money (2002 to Money Plus) [MD5/SHA1 32/64]... (6xOMP) DONE
-Many salts:	8386K c/s real, 1440K c/s virtual
-Only one salt:	7028K c/s real, 1189K c/s virtual
+Many salts:	8779K c/s real, 1463K c/s virtual
+Only one salt:	7090K c/s real, 1193K c/s virtual
 
 Benchmarking: MongoDB, system / network [MD5 32/64]... (6xOMP) DONE
 Speed for cost 1 (salt type) of 0 and 1
-Raw:	22265K c/s real, 3717K c/s virtual
+Raw:	21676K c/s real, 3630K c/s virtual
 
 Benchmarking: scram [SCRAM PBKDF2-SHA1 256/256 AVX2 8x]... (6xOMP) DONE
-Raw:	12590 c/s real, 2124 c/s virtual
+Raw:	12487 c/s real, 2104 c/s virtual
 
 Benchmarking: Mozilla, Mozilla key3.db [SHA1 3DES 32/64]... (6xOMP) DONE
-Many salts:	2522K c/s real, 426753 c/s virtual
-Only one salt:	2494K c/s real, 418534 c/s virtual
+Many salts:	2588K c/s real, 433527 c/s virtual
+Only one salt:	2440K c/s real, 410202 c/s virtual
 
 Benchmarking: mscash, MS Cache Hash (DCC) [MD4 32/64]... (6xOMP) DONE
-Many salts:	101744K c/s real, 17014K c/s virtual
-Only one salt:	32077K c/s real, 5373K c/s virtual
+Many salts:	96153K c/s real, 16160K c/s virtual
+Only one salt:	31586K c/s real, 5273K c/s virtual
 
 Benchmarking: mscash2, MS Cache Hash 2 (DCC2) [PBKDF2-SHA1 256/256 AVX2 8x]... (6xOMP) DONE
-Raw:	12480 c/s real, 2076 c/s virtual
+Raw:	12356 c/s real, 2066 c/s virtual
 
 Benchmarking: MSCHAPv2, C/R [MD4 DES (ESS MD5) 256/256 AVX2 8x3]... DONE
-Many salts:	11486M c/s real, 11486M c/s virtual
-Only one salt:	61143K c/s real, 61143K c/s virtual
+Many salts:	11422M c/s real, 11422M c/s virtual
+Only one salt:	60690K c/s real, 60690K c/s virtual
 
 Benchmarking: mschapv2-naive, MSCHAPv2 C/R [MD4 DES 256/256 AVX2 naive]... (6xOMP) DONE
-Many salts:	676159K c/s real, 113831K c/s virtual
-Only one salt:	28778K c/s real, 4820K c/s virtual
+Many salts:	622854K c/s real, 106108K c/s virtual
+Only one salt:	26959K c/s real, 4546K c/s virtual
 
 Benchmarking: krb5pa-md5, Kerberos 5 AS-REQ Pre-Auth etype 23 [32/64]... (6xOMP) DONE
-Many salts:	6120K c/s real, 1021K c/s virtual
-Only one salt:	3075K c/s real, 523993 c/s virtual
+Many salts:	5997K c/s real, 1006K c/s virtual
+Only one salt:	3150K c/s real, 528579 c/s virtual
 
 Benchmarking: mssql, MS SQL [SHA1 256/256 AVX2 8x]... DONE
-Many salts:	36025K c/s real, 36025K c/s virtual
-Only one salt:	17037K c/s real, 17037K c/s virtual
+Many salts:	35060K c/s real, 35060K c/s virtual
+Only one salt:	16756K c/s real, 16756K c/s virtual
 
 Benchmarking: mssql05, MS SQL 2005 [SHA1 256/256 AVX2 8x]... DONE
-Many salts:	36297K c/s real, 36297K c/s virtual
-Only one salt:	27567K c/s real, 27567K c/s virtual
+Many salts:	35363K c/s real, 35363K c/s virtual
+Only one salt:	26816K c/s real, 26816K c/s virtual
 
 Benchmarking: mssql12, MS SQL 2012/2014 [SHA512 256/256 AVX2 4x]... (6xOMP) DONE
-Many salts:	36476K c/s real, 6193K c/s virtual
-Only one salt:	21000K c/s real, 3523K c/s virtual
+Many salts:	36519K c/s real, 6158K c/s virtual
+Only one salt:	21344K c/s real, 3563K c/s virtual
 
 Benchmarking: multibit, MultiBit Wallet [MD5/scrypt AES 32/64]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 3, cost 2 (kdf [1:MD5 2:scrypt hd 3:scrypt classic]) of 1
-Many salts:	4128K c/s real, 690429 c/s virtual
-Only one salt:	3769K c/s real, 632512 c/s virtual
+Many salts:	3966K c/s real, 668875 c/s virtual
+Only one salt:	3413K c/s real, 596819 c/s virtual
 
 Benchmarking: mysqlna, MySQL Network Authentication [SHA1 32/64]... (6xOMP) DONE
-Many salts:	12662K c/s real, 2146K c/s virtual
-Only one salt:	11535K c/s real, 1955K c/s virtual
+Many salts:	13307K c/s real, 2232K c/s virtual
+Only one salt:	11166K c/s real, 1918K c/s virtual
 
 Benchmarking: mysql-sha1, MySQL 4.1+ [SHA1 256/256 AVX2 8x]... DONE
-Raw:	17541K c/s real, 17541K c/s virtual
+Raw:	17453K c/s real, 17453K c/s virtual
 
 Benchmarking: mysql, MySQL pre-4.1 [32/64]... DONE
-Raw:	53917K c/s real, 53917K c/s virtual
+Raw:	54352K c/s real, 54352K c/s virtual
 
 Benchmarking: net-ah, IPsec AH HMAC-MD5-96 [MD5 32/64]... (6xOMP) DONE
-Many salts:	9615K c/s real, 1602K c/s virtual
-Only one salt:	8792K c/s real, 1472K c/s virtual
+Many salts:	9185K c/s real, 1546K c/s virtual
+Only one salt:	8558K c/s real, 1436K c/s virtual
 
 Benchmarking: nethalflm, HalfLM C/R [DES 32/64]... (6xOMP) DONE
-Many salts:	19415K c/s real, 3353K c/s virtual
-Only one salt:	3047K c/s real, 875696 c/s virtual
+Many salts:	18432K c/s real, 3228K c/s virtual
+Only one salt:	3096K c/s real, 892385 c/s virtual
 
 Benchmarking: netlm, LM C/R [DES 32/64]... (6xOMP) DONE
 Warning: "Many salts" test limited: 27/256
-Many salts:	21233K c/s real, 3751K c/s virtual
-Only one salt:	1722K c/s real, 1241K c/s virtual
+Many salts:	21023K c/s real, 3712K c/s virtual
+Only one salt:	1709K c/s real, 1235K c/s virtual
 
 Benchmarking: netlmv2, LMv2 C/R [MD4 HMAC-MD5 32/64]... (6xOMP) DONE
-Many salts:	6498K c/s real, 1084K c/s virtual
-Only one salt:	4794K c/s real, 801776 c/s virtual
+Many salts:	6345K c/s real, 1061K c/s virtual
+Only one salt:	4784K c/s real, 798771 c/s virtual
 
 Benchmarking: net-md5, "Keyed MD5" RIPv2, OSPF, BGP, SNMPv2 [MD5 32/64]... (6xOMP) DONE
-Many salts:	9656K c/s real, 9656K c/s virtual
-Only one salt:	8067K c/s real, 8067K c/s virtual
+Many salts:	9216K c/s real, 9216K c/s virtual
+Only one salt:	7828K c/s real, 7828K c/s virtual
 
 Benchmarking: netntlmv2, NTLMv2 C/R [MD4 HMAC-MD5 32/64]... (6xOMP) DONE
-Many salts:	5864K c/s real, 979039 c/s virtual
-Only one salt:	4328K c/s real, 728694 c/s virtual
+Many salts:	5778K c/s real, 967911 c/s virtual
+Only one salt:	4405K c/s real, 736663 c/s virtual
 
 Benchmarking: netntlm, NTLMv1 C/R [MD4 DES (ESS MD5) 256/256 AVX2 8x3]... DONE
-Many salts:	11504M c/s real, 11504M c/s virtual
-Only one salt:	61102K c/s real, 61102K c/s virtual
+Many salts:	11322M c/s real, 11322M c/s virtual
+Only one salt:	60448K c/s real, 60448K c/s virtual
 
 Benchmarking: netntlm-naive, NTLMv1 C/R [MD4 DES (ESS MD5) DES 256/256 AVX2 naive]... (6xOMP) DONE
-Many salts:	671784K c/s real, 113285K c/s virtual
-Only one salt:	29073K c/s real, 4861K c/s virtual
+Many salts:	650747K c/s real, 110109K c/s virtual
+Only one salt:	28975K c/s real, 4829K c/s virtual
 
 Benchmarking: net-sha1, "Keyed SHA1" BFD [SHA1 32/64]... (6xOMP) DONE
-Many salts:	10651K c/s real, 10651K c/s virtual
-Only one salt:	8833K c/s real, 8833K c/s virtual
+Many salts:	10920K c/s real, 10920K c/s virtual
+Only one salt:	8974K c/s real, 8974K c/s virtual
 
 Benchmarking: nk, Nuked-Klan CMS [SHA1 MD5 32/64]... (6xOMP) DONE
-Warning: "Many salts" test limited: 70/256
-Many salts:	13492K c/s real, 2286K c/s virtual
-Only one salt:	11993K c/s real, 2085K c/s virtual
+Warning: "Many salts" test limited: 69/256
+Many salts:	13565K c/s real, 2287K c/s virtual
+Only one salt:	12069K c/s real, 2069K c/s virtual
 
 Benchmarking: notes, Apple Notes [PBKDF2-SHA256 AES 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 20000
-Raw:	2512 c/s real, 419 c/s virtual
+Raw:	2354 c/s real, 409 c/s virtual
 
 Benchmarking: md5ns, Netscreen [md5($s.$p) (OSC) (PW > 31 bytes) 256/256 AVX2 8x3]... DONE
-Many salts:	17065K c/s real, 17065K c/s virtual
-Only one salt:	13167K c/s real, 13167K c/s virtual
+Many salts:	15704K c/s real, 15704K c/s virtual
+Only one salt:	12445K c/s real, 12445K c/s virtual
 
 Benchmarking: nsec3, DNSSEC NSEC3 [32/64]... DONE
-Raw:	71945 c/s real, 71945 c/s virtual
+Raw:	72993 c/s real, 72993 c/s virtual
 
 Benchmarking: NT [MD4 256/256 AVX2 8x3]... DONE
-Raw:	71135K c/s real, 71135K c/s virtual
+Raw:	70168K c/s real, 70168K c/s virtual
 
 Benchmarking: o10glogon, Oracle 10g-logon protocol [DES-AES128-MD5 32/64]... (6xOMP) DONE
-Many salts:	2045K c/s real, 346641 c/s virtual
-Only one salt:	2123K c/s real, 355103 c/s virtual
+Many salts:	2091K c/s real, 349709 c/s virtual
+Only one salt:	2082K c/s real, 352889 c/s virtual
 
 Benchmarking: o3logon, Oracle O3LOGON protocol [SHA1 DES 32/64]... (6xOMP) DONE
-Warning: "Many salts" test limited: 30/256
-Many salts:	1459K c/s real, 247409 c/s virtual
-Only one salt:	1397K c/s real, 239967 c/s virtual
+Warning: "Many salts" test limited: 31/256
+Many salts:	1493K c/s real, 249380 c/s virtual
+Only one salt:	1411K c/s real, 239967 c/s virtual
 
 Benchmarking: o5logon, Oracle O5LOGON protocol [SHA1 AES 32/64]... (6xOMP) DONE
-Many salts:	14229K c/s real, 2399K c/s virtual
-Only one salt:	12693K c/s real, 2129K c/s virtual
+Many salts:	14487K c/s real, 2422K c/s virtual
+Only one salt:	12251K c/s real, 2072K c/s virtual
 
 Benchmarking: ODF, OpenDocument Star/Libre/OpenOffice [PBKDF2-SHA1 256/256 AVX2 8x BF/AES]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 1024, cost 2 (crypto [0=Blowfish, 1=AES]) of 0 and 1
-Raw:	58608 c/s real, 9833 c/s virtual
+Raw:	57216 c/s real, 9600 c/s virtual
 
 Benchmarking: Office, 2007/2010/2013 [SHA1 256/256 AVX2 8x / SHA512 256/256 AVX2 4x AES]... (6xOMP) DONE
 Speed for cost 1 (MS Office version) of 2007, cost 2 (iteration count) of 50000
-Raw:	4942 c/s real, 843 c/s virtual
+Raw:	5088 c/s real, 843 c/s virtual
 
 Benchmarking: oldoffice, MS Office <= 2003 [MD5/SHA1 RC4 32/64]... (6xOMP) DONE
 Speed for cost 1 (hash type) of 1 and 0
-Many salts:	3406K c/s real, 569707 c/s virtual
-Only one salt:	3133K c/s real, 526628 c/s virtual
+Many salts:	3225K c/s real, 550443 c/s virtual
+Only one salt:	3176K c/s real, 529408 c/s virtual
 
 Benchmarking: OpenBSD-SoftRAID [PBKDF2-SHA1 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (kdf) of 1, cost 2 (iteration count) of 8192
-Raw:	7223 c/s real, 1224 c/s virtual
+Raw:	7271 c/s real, 1232 c/s virtual
 
 Benchmarking: openssl-enc, OpenSSL "enc" encryption (AES-128, MD5) [32/64]... (6xOMP) DONE
-Many salts:	8751K c/s real, 1465K c/s virtual
-Only one salt:	7835K c/s real, 1319K c/s virtual
+Many salts:	8395K c/s real, 1418K c/s virtual
+Only one salt:	7300K c/s real, 1247K c/s virtual
 
 Benchmarking: oracle, Oracle 10 [DES 32/64]... (6xOMP) DONE
-Warning: "Many salts" test limited: 244/256
-Many salts:	5996K c/s real, 1002K c/s virtual
-Only one salt:	4546K c/s real, 756499 c/s virtual
+Warning: "Many salts" test limited: 242/256
+Many salts:	5947K c/s real, 999561 c/s virtual
+Only one salt:	4546K c/s real, 759025 c/s virtual
 
 Benchmarking: oracle11, Oracle 11g [SHA1 256/256 AVX2 8x]... DONE
-Many salts:	34274K c/s real, 34274K c/s virtual
-Only one salt:	23732K c/s real, 23732K c/s virtual
+Many salts:	33716K c/s real, 33716K c/s virtual
+Only one salt:	23353K c/s real, 23353K c/s virtual
 
 Benchmarking: Oracle12C [PBKDF2-SHA512 256/256 AVX2 4x]... (6xOMP) DONE
-Raw:	4894 c/s real, 829 c/s virtual
+Raw:	4942 c/s real, 833 c/s virtual
 
 Benchmarking: osc, osCommerce [md5($s.$p) (OSC) 256/256 AVX2 8x3]... DONE
-Many salts:	31224K c/s real, 31224K c/s virtual
-Only one salt:	20600K c/s real, 20600K c/s virtual
+Many salts:	31066K c/s real, 31066K c/s virtual
+Only one salt:	20569K c/s real, 20569K c/s virtual
 
 Benchmarking: ospf, OSPF / IS-IS [HMAC-SHA-X 32/64]... (6xOMP) DONE
-Raw:	8711K c/s real, 1488K c/s virtual
+Raw:	8945K c/s real, 1503K c/s virtual
 
 Benchmarking: Padlock [PBKDF2-SHA256 AES 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 10000
-Raw:	4894 c/s real, 830 c/s virtual
+Raw:	4942 c/s real, 832 c/s virtual
 
 Benchmarking: Palshop, MD5(Palshop) [MD5 + SHA1 32/64]... (6xOMP) DONE
-Raw:	11501K c/s real, 1926K c/s virtual
+Raw:	11403K c/s real, 1929K c/s virtual
 
 Benchmarking: Panama [Panama 32/64]... (6xOMP) DONE
-Raw:	5369K c/s real, 902496 c/s virtual
+Raw:	5332K c/s real, 902367 c/s virtual
 
 Benchmarking: PBKDF2-HMAC-MD4 [PBKDF2-MD4 256/256 AVX2 8x3]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 1000
-Raw:	361411 c/s real, 61033 c/s virtual
+Raw:	361411 c/s real, 60731 c/s virtual
 
 Benchmarking: PBKDF2-HMAC-MD5 [PBKDF2-MD5 256/256 AVX2 8x3]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 1000
-Raw:	258048 c/s real, 43811 c/s virtual
+Raw:	258048 c/s real, 43885 c/s virtual
 
 Benchmarking: PBKDF2-HMAC-SHA1 [PBKDF2-SHA1 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 1000
-Raw:	121663 c/s real, 20827 c/s virtual
+Raw:	121728 c/s real, 20424 c/s virtual
 
 Benchmarking: PBKDF2-HMAC-SHA256 [PBKDF2-SHA256 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 1000
-Raw:	49152 c/s real, 8219 c/s virtual
+Raw:	49152 c/s real, 8205 c/s virtual
 
 Benchmarking: PBKDF2-HMAC-SHA512, GRUB2 / OS X 10.8+ [PBKDF2-SHA512 256/256 AVX2 4x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 1000
-Raw:	19488 c/s real, 3319 c/s virtual
+Raw:	20040 c/s real, 3362 c/s virtual
 
 Benchmarking: PDF [MD5 SHA2 RC4/AES 32/64]... (6xOMP) DONE
 Speed for cost 1 (revision) of 4
-Raw:	292992 c/s real, 49077 c/s virtual
+Raw:	260928 c/s real, 46346 c/s virtual
 
 Benchmarking: PEM, PKCS#8 private key (RSA/DSA/ECDSA) [PBKDF2-SHA1 256/256 AVX2 8x 3DES/AES]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 4096, cost 2 (cipher [1=3DES, 2/3/4=AES-128/192/256]) of 1
-Raw:	25853 c/s real, 4337 c/s virtual
+Raw:	24847 c/s real, 4238 c/s virtual
 
 Benchmarking: pfx [PKCS12 PBE (.pfx, .p12) (SHA-1 to SHA-512) 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 2048, cost 2 (mac-type [1:SHA1 224:SHA224 256:SHA256 384:SHA384 512:SHA512]) of 1
-Raw:	120142 c/s real, 20224 c/s virtual
+Raw:	115200 c/s real, 19759 c/s virtual
 
 Benchmarking: pgpdisk [PGP Disk / Virtual Disk SHA1 64]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 16000, cost 2 (algorithm [3=CAST, 4=TwoFish, 5/6/7=AES]) of 5
-Raw:	4416 c/s real, 731 c/s virtual
+Raw:	4246 c/s real, 718 c/s virtual
 
 Benchmarking: pgpsda [PGP SDA SHA1 64]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 16000
-Raw:	13421 c/s real, 2266 c/s virtual
+Raw:	13687 c/s real, 2296 c/s virtual
 
 Benchmarking: pgpwde [PGP WDE S2K-SHA1 64]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 131072
-Raw:	9885 c/s real, 1675 c/s virtual
+Raw:	9885 c/s real, 1650 c/s virtual
 
 Benchmarking: phpass ($P$9) [phpass ($P$ or $H$) 256/256 AVX2 8x3]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 2048
-Many salts:	291456 c/s real, 48657 c/s virtual
-Only one salt:	279360 c/s real, 47030 c/s virtual
+Many salts:	285718 c/s real, 48015 c/s virtual
+Only one salt:	276480 c/s real, 46467 c/s virtual
 
 Benchmarking: PHPS [md5(md5($p).$s) 256/256 AVX2 8x3]... DONE
-Many salts:	47426K c/s real, 47426K c/s virtual
-Only one salt:	13245K c/s real, 13245K c/s virtual
+Many salts:	47171K c/s real, 47171K c/s virtual
+Only one salt:	13359K c/s real, 13359K c/s virtual
 
 Benchmarking: PHPS2 [md5(md5($p).$s) 256/256 AVX2 8x3]... DONE
-Many salts:	47856K c/s real, 47856K c/s virtual
-Only one salt:	13389K c/s real, 13389K c/s virtual
+Many salts:	47355K c/s real, 47355K c/s virtual
+Only one salt:	13369K c/s real, 13369K c/s virtual
 
 Benchmarking: pix-md5, Cisco PIX [md5($p) (Cisco PIX) 256/256 AVX2 8x3]... DONE
-Raw:	22985K c/s real, 22985K c/s virtual
+Raw:	22811K c/s real, 22811K c/s virtual
 
 Benchmarking: PKZIP [32/64]... (6xOMP) DONE
-Many salts:	58724K c/s real, 9787K c/s virtual
-Only one salt:	30621K c/s real, 5198K c/s virtual
+Many salts:	54767K c/s real, 9266K c/s virtual
+Only one salt:	31444K c/s real, 5267K c/s virtual
 
 Benchmarking: po, Post.Office [MD5 32/64]... DONE
-Many salts:	3875K c/s real, 3875K c/s virtual
-Only one salt:	3712K c/s real, 3712K c/s virtual
+Many salts:	3967K c/s real, 3967K c/s virtual
+Only one salt:	3752K c/s real, 3752K c/s virtual
 
 Benchmarking: postgres, PostgreSQL C/R [MD5 32/64]... (6xOMP) DONE
-Many salts:	17203K c/s real, 2891K c/s virtual
-Only one salt:	15360K c/s real, 2555K c/s virtual
+Many salts:	16813K c/s real, 2844K c/s virtual
+Only one salt:	15227K c/s real, 2542K c/s virtual
 
 Benchmarking: PST, custom CRC-32 [32/64]... DONE
-Raw:	66356K c/s real, 66356K c/s virtual
+Raw:	66132K c/s real, 66132K c/s virtual
 
 Benchmarking: PuTTY, Private Key (RSA/DSA/ECDSA/ED25519) [SHA1/AES 32/64]... (6xOMP) DONE
-Raw:	1263K c/s real, 212336 c/s virtual
+Raw:	1265K c/s real, 214781 c/s virtual
 
 Benchmarking: pwsafe, Password Safe [SHA256 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 2048
-Raw:	49816 c/s real, 8365 c/s virtual
+Raw:	49816 c/s real, 8352 c/s virtual
 
 Benchmarking: qnx, qnx hash (rounds=1000) [QNX 32/64]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 1000, cost 2 (algorithm [5:MD5 256:SHA256 512:SHA512]) of 5
-Raw:	294912 c/s real, 49732 c/s virtual
+Raw:	301056 c/s real, 50768 c/s virtual
 
 Benchmarking: RACF [DES 32/64]... (6xOMP) DONE
-Many salts:	39174K c/s real, 6650K c/s virtual
-Only one salt:	17952K c/s real, 2992K c/s virtual
+Many salts:	40445K c/s real, 6729K c/s virtual
+Only one salt:	16926K c/s real, 2903K c/s virtual
 
 Benchmarking: RACF-KDFAES [KDFAES (DES + HMAC-SHA256/64 + AES-256)]... (6xOMP) DONE
 Warning: "Many salts" test limited: 2/256
@@ -687,192 +685,192 @@ Many salts:	1.2 c/s real, 0.2 c/s virtual
 Only one salt:	0.6 c/s real, 0.1 c/s virtual
 
 Benchmarking: radius, RADIUS authentication [MD5 32/64]... (6xOMP) DONE
-Many salts:	37828K c/s real, 6315K c/s virtual
-Only one salt:	23887K c/s real, 4069K c/s virtual
+Many salts:	36624K c/s real, 6145K c/s virtual
+Only one salt:	24667K c/s real, 4159K c/s virtual
 
 Benchmarking: RAdmin, v2.x [MD5 32/64]... (6xOMP) DONE
-Raw:	16852K c/s real, 3828K c/s virtual
+Raw:	16852K c/s real, 3820K c/s virtual
 
 Benchmarking: RAKP, IPMI 2.0 RAKP (RMCP+) [HMAC-SHA1 256/256 AVX2 8x]... (6xOMP) DONE
-Many salts:	80216K c/s real, 13527K c/s virtual
-Only one salt:	12721K c/s real, 4650K c/s virtual
+Many salts:	78053K c/s real, 13251K c/s virtual
+Only one salt:	12779K c/s real, 4664K c/s virtual
 
 Benchmarking: rar, RAR3 (length 5) [SHA1 256/256 AVX2 8x AES]... (6xOMP) DONE
-Raw:	616 c/s real, 103 c/s virtual
+Raw:	617 c/s real, 103 c/s virtual
 
 Benchmarking: RAR5 [PBKDF2-SHA256 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 32768
-Raw:	1520 c/s real, 254 c/s virtual
+Raw:	1536 c/s real, 254 c/s virtual
 
 Benchmarking: Raw-SHA512 [SHA512 256/256 AVX2 4x]... (6xOMP) DONE
-Raw:	24072K c/s real, 4032K c/s virtual
+Raw:	25214K c/s real, 4223K c/s virtual
 
 Benchmarking: Raw-Blake2 [BLAKE2b 512 128/128 AVX]... (6xOMP) DONE
-Raw:	12652K c/s real, 2821K c/s virtual
+Raw:	13369K c/s real, 2938K c/s virtual
 
 Benchmarking: Raw-Keccak [Keccak 512 32/64]... (6xOMP) DONE
-Raw:	8370K c/s real, 1460K c/s virtual
+Raw:	8159K c/s real, 1441K c/s virtual
 
 Benchmarking: Raw-Keccak-256 [Keccak 256 32/64]... (6xOMP) DONE
-Raw:	8380K c/s real, 1413K c/s virtual
+Raw:	8626K c/s real, 1435K c/s virtual
 
 Benchmarking: Raw-MD4 [MD4 256/256 AVX2 8x3]... DONE
-Raw:	65448K c/s real, 65448K c/s virtual
+Raw:	64422K c/s real, 64422K c/s virtual
 
 Benchmarking: Raw-MD5 [MD5 256/256 AVX2 8x3]... DONE
-Raw:	56918K c/s real, 56918K c/s virtual
+Raw:	56009K c/s real, 56009K c/s virtual
 
 Benchmarking: Raw-MD5u [md5(utf16($p)) 256/256 AVX2 8x3]... DONE
-Raw:	53896K c/s real, 53896K c/s virtual
+Raw:	53382K c/s real, 53382K c/s virtual
 
 Benchmarking: Raw-SHA1 [SHA1 256/256 AVX2 8x]... DONE
-Raw:	32242K c/s real, 31922K c/s virtual
+Raw:	31769K c/s real, 31769K c/s virtual
 
 Benchmarking: Raw-SHA1-AxCrypt [SHA1 256/256 AVX2 8x]... DONE
-Raw:	32072K c/s real, 32072K c/s virtual
+Raw:	31792K c/s real, 31792K c/s virtual
 
 Benchmarking: Raw-SHA1-Linkedin [SHA1 256/256 AVX2 8x]... DONE
-Raw:	31770K c/s real, 32090K c/s virtual
+Raw:	31374K c/s real, 31374K c/s virtual
 
 Benchmarking: Raw-SHA224 [SHA224 256/256 AVX2 8x]... (6xOMP) DONE
-Raw:	43143K c/s real, 7214K c/s virtual
+Raw:	44924K c/s real, 7575K c/s virtual
 
 Benchmarking: Raw-SHA256 [SHA256 256/256 AVX2 8x]... (6xOMP) DONE
-Raw:	46816K c/s real, 7973K c/s virtual
+Raw:	44728K c/s real, 7632K c/s virtual
 
 Benchmarking: Raw-SHA3 [SHA3 512 32/64]... (6xOMP) DONE
-Raw:	8370K c/s real, 1460K c/s virtual
+Raw:	7766K c/s real, 1404K c/s virtual
 
 Benchmarking: Raw-SHA384 [SHA384 256/256 AVX2 4x]... (6xOMP) DONE
-Raw:	24182K c/s real, 4078K c/s virtual
+Raw:	25583K c/s real, 4278K c/s virtual
 
 Benchmarking: ripemd-128, RIPEMD 128 [32/64]... DONE
-Raw:	5887K c/s real, 5887K c/s virtual
+Raw:	5863K c/s real, 5863K c/s virtual
 
 Benchmarking: ripemd-160, RIPEMD 160 [32/64]... DONE
-Raw:	4015K c/s real, 4015K c/s virtual
+Raw:	3987K c/s real, 3987K c/s virtual
 
 Benchmarking: rsvp, HMAC-MD5 / HMAC-SHA1, RSVP, IS-IS, OMAPI, RNDC, TSIG [MD5 32/64]... (6xOMP) DONE
 Speed for cost 1 (hash algorithm used for hmac [1:MD5 2:SHA1 3:SHA224 4:SHA256 5:SHA384 6:SHA512]) of 1 and 2
-Many salts:	12380K c/s real, 2087K c/s virtual
-Only one salt:	6715K c/s real, 1122K c/s virtual
+Many salts:	12601K c/s real, 2107K c/s virtual
+Only one salt:	6678K c/s real, 1120K c/s virtual
 
 Benchmarking: Siemens-S7 [HMAC-SHA1 32/64]... (6xOMP) DONE
-Many salts:	22344K c/s real, 3736K c/s virtual
-Only one salt:	7882K c/s real, 1324K c/s virtual
+Many salts:	22513K c/s real, 3758K c/s virtual
+Only one salt:	7868K c/s real, 1311K c/s virtual
 
 Benchmarking: Salted-SHA1 [SHA1 256/256 AVX2 8x]... (6xOMP) DONE
-Many salts:	143572K c/s real, 24211K c/s virtual
-Only one salt:	60150K c/s real, 10244K c/s virtual
+Many salts:	144850K c/s real, 24303K c/s virtual
+Only one salt:	57901K c/s real, 9897K c/s virtual
 
 Benchmarking: SSHA512, LDAP [SHA512 256/256 AVX2 4x]... (6xOMP) DONE
-Many salts:	35586K c/s real, 5990K c/s virtual
-Only one salt:	24625K c/s real, 4138K c/s virtual
+Many salts:	34504K c/s real, 5818K c/s virtual
+Only one salt:	25018K c/s real, 4197K c/s virtual
 
 Benchmarking: sapb, SAP CODVN B (BCODE) [MD5 256/256 AVX2 8x3]... (6xOMP) DONE
-Many salts:	55590K c/s real, 9343K c/s virtual
-Only one salt:	35536K c/s real, 5992K c/s virtual
+Many salts:	56401K c/s real, 9479K c/s virtual
+Only one salt:	34283K c/s real, 5880K c/s virtual
 
 Benchmarking: sapg, SAP CODVN F/G (PASSCODE) [SHA1 256/256 AVX2 8x]... (6xOMP) DONE
-Many salts:	33976K c/s real, 5691K c/s virtual
-Only one salt:	23961K c/s real, 4000K c/s virtual
+Many salts:	34775K c/s real, 5805K c/s virtual
+Only one salt:	23310K c/s real, 3930K c/s virtual
 
 Benchmarking: saph, SAP CODVN H (PWDSALTEDHASH) (SHA1x1024) [SHA-1/SHA-2 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (hash type [1:SHA1 2:SHA256 3:SHA384 4:SHA512]) of 1, cost 2 (iteration count) of 1024
-Warning: "Many salts" test limited: 231/256
-Many salts:	177408 c/s real, 29469 c/s virtual
-Only one salt:	173370 c/s real, 29232 c/s virtual
+Warning: "Many salts" test limited: 227/256
+Many salts:	174336 c/s real, 29153 c/s virtual
+Only one salt:	175872 c/s real, 29312 c/s virtual
 
 Benchmarking: sappse [PKCS12 PBE SHA1 256/256 AVX2 8x 3DES]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 2048
-Raw:	41472 c/s real, 7005 c/s virtual
+Raw:	41088 c/s real, 6905 c/s virtual
 
 Benchmarking: securezip, PKWARE SecureZIP [SHA1 AES 32/64]... (6xOMP) DONE
-Many salts:	2156K c/s real, 359424 c/s virtual
-Only one salt:	1922K c/s real, 326303 c/s virtual
+Many salts:	2150K c/s real, 359598 c/s virtual
+Only one salt:	1916K c/s real, 323259 c/s virtual
 
 Benchmarking: 7z, 7-Zip (512K iterations) [SHA256 256/256 AVX2 8x AES]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 524288, cost 2 (padding size) of 4 and 9, cost 3 (compression type) of 128 and 1
-Many salts:	44683 c/s real, 7402 c/s virtual
-Only one salt:	214 c/s real, 36.3 c/s virtual
+Many salts:	44281 c/s real, 7436 c/s virtual
+Only one salt:	216 c/s real, 36.2 c/s virtual
 
 Benchmarking: Signal [Signal Android PKCS12 PBE SHA-1 32/64]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 6024 and 6097
-Raw:	7344 c/s real, 1232 c/s virtual
+Raw:	7230 c/s real, 1219 c/s virtual
 
 Benchmarking: SIP [MD5 32/64]... (6xOMP) DONE
-Warning: "Many salts" test limited: 74/256
-Many salts:	14404K c/s real, 2437K c/s virtual
-Only one salt:	13042K c/s real, 2221K c/s virtual
+Warning: "Many salts" test limited: 73/256
+Many salts:	14352K c/s real, 2416K c/s virtual
+Only one salt:	12914K c/s real, 2213K c/s virtual
 
 Benchmarking: skein-256, Skein 256 [Skein 32/64]... (6xOMP) DONE
-Raw:	14800K c/s real, 2479K c/s virtual
+Raw:	14757K c/s real, 2484K c/s virtual
 
 Benchmarking: skein-512, Skein 512 [Skein 32/64]... (6xOMP) DONE
-Raw:	14770K c/s real, 2478K c/s virtual
+Raw:	14644K c/s real, 2461K c/s virtual
 
 Benchmarking: skey, S/Key [MD4/MD5/SHA1/RMD160 32/64]... DONE
 Speed for cost 1 (hash type [1:MD4 2:MD5 3:SHA1 4:RMD160]) of 1 and 2, cost 2 (iteration count) of 96 and 99
-Raw:	82844 c/s real, 82844 c/s virtual
+Raw:	81904 c/s real, 81904 c/s virtual
 
 Benchmarking: SL3, Nokia operator unlock [SHA1 256/256 AVX2 8x]... (6xOMP) DONE
-Many salts:	161611K c/s real, 27531K c/s virtual
-Only one salt:	31358K c/s real, 7629K c/s virtual
+Many salts:	158662K c/s real, 27214K c/s virtual
+Only one salt:	30572K c/s real, 7643K c/s virtual
 
 Benchmarking: Snefru-128 [32/64]... (6xOMP) DONE
-Raw:	2227K c/s real, 374319 c/s virtual
+Raw:	2150K c/s real, 366875 c/s virtual
 
 Benchmarking: Snefru-256 [32/64]... (6xOMP) DONE
-Raw:	2144K c/s real, 367167 c/s virtual
+Raw:	2242K c/s real, 373760 c/s virtual
 
 Benchmarking: LastPass, sniffed sessions [PBKDF2-SHA256 AES 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 500
-Warning: "Many salts" test limited: 63/256
-Many salts:	96768 c/s real, 16209 c/s virtual
-Only one salt:	94870 c/s real, 16128 c/s virtual
+Warning: "Many salts" test limited: 64/256
+Many salts:	97330 c/s real, 16302 c/s virtual
+Only one salt:	94870 c/s real, 16101 c/s virtual
 
 Benchmarking: SNMP, SNMPv3 USM [HMAC-MD5-96/HMAC-SHA1-96 32/64]... (6xOMP) DONE
-Raw:	1153 c/s real, 197 c/s virtual
+Raw:	1176 c/s real, 197 c/s virtual
 
 Benchmarking: solarwinds, SolarWinds Orion [PBKDF2-SHA1 256/256 AVX2 8x]... (6xOMP) DONE
-Raw:	2376 c/s real, 400 c/s virtual
+Raw:	2448 c/s real, 404 c/s virtual
 
 Benchmarking: SSH [RSA/DSA/EC/OPENSSH (SSH private keys) 32/64]... (6xOMP) DONE
 Speed for cost 1 (KDF/cipher [0=MD5/AES 1=MD5/3DES 2=Bcrypt/AES]) of 0 and 1, cost 2 (iteration count) of 1 and 2
-Raw:	3965K c/s real, 671049 c/s virtual
+Raw:	4035K c/s real, 675883 c/s virtual
 
 Benchmarking: sspr, NetIQ SSPR / Adobe AEM [MD5/SHA1/SHA256/SHA512 32/64]... (6xOMP) DONE
 Speed for cost 1 (KDF [0:MD5 1:SHA1 2:SHA1_SALT 3:SHA256_SALT 4:SHA512_SALT]) of 1, cost 2 (iteration count) of 100000
-Raw:	408 c/s real, 74.0 c/s virtual
+Raw:	447 c/s real, 76.1 c/s virtual
 
 Benchmarking: Stribog-256 [GOST R 34.11-2012 128/128 AVX 1x]... (6xOMP) DONE
-Raw:	2697K c/s real, 451039 c/s virtual
+Raw:	2678K c/s real, 447957 c/s virtual
 
 Benchmarking: Stribog-512 [GOST R 34.11-2012 128/128 AVX 1x]... (6xOMP) DONE
-Raw:	2638K c/s real, 444250 c/s virtual
+Raw:	2672K c/s real, 447678 c/s virtual
 
 Benchmarking: STRIP, Password Manager [PBKDF2-SHA1 256/256 AVX2 8x]... (6xOMP) DONE
-Raw:	15507 c/s real, 2630 c/s virtual
+Raw:	15811 c/s real, 2643 c/s virtual
 
 Benchmarking: SunMD5 [MD5 256/256 AVX2 8x3]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 5000
-Raw:	5142 c/s real, 879 c/s virtual
+Raw:	5052 c/s real, 870 c/s virtual
 
 Benchmarking: SybaseASE, Sybase ASE [SHA256 256/256 AVX2 8x]... (6xOMP) DONE
-Many salts:	29417K c/s real, 4911K c/s virtual
-Only one salt:	8036K c/s real, 1350K c/s virtual
+Many salts:	28975K c/s real, 4829K c/s virtual
+Only one salt:	7421K c/s real, 1284K c/s virtual
 
 Benchmarking: Sybase-PROP [salted FEAL-8 32/64]... (6xOMP) DONE
-Many salts:	4473K c/s real, 759524 c/s virtual
-Only one salt:	4494K c/s real, 750306 c/s virtual
+Many salts:	4602K c/s real, 774852 c/s virtual
+Only one salt:	4494K c/s real, 749056 c/s virtual
 
 Benchmarking: tacacs-plus, TACACS+ [MD5 32/64]... (6xOMP) DONE
-Many salts:	41456K c/s real, 6920K c/s virtual
-Only one salt:	24956K c/s real, 4201K c/s virtual
+Many salts:	41011K c/s real, 6892K c/s virtual
+Only one salt:	25276K c/s real, 4226K c/s virtual
 
 Benchmarking: tcp-md5, TCP MD5 Signatures, BGP, MSDP [MD5 32/64]... (6xOMP) DONE
-Many salts:	38375K c/s real, 6449K c/s virtual
-Only one salt:	21540K c/s real, 3657K c/s virtual
+Many salts:	38240K c/s real, 6416K c/s virtual
+Only one salt:	22499K c/s real, 3756K c/s virtual
 
 Benchmarking: telegram [PBKDF2-SHA1 256/256 AVX2 8x AES]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 4000
@@ -880,617 +878,617 @@ Raw:	4430 c/s real, 746 c/s virtual
 
 Benchmarking: tezos, Tezos Key [PBKDF2-SHA512 256/256 AVX2 4x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 2048
-Raw:	9504 c/s real, 1597 c/s virtual
+Raw:	9409 c/s real, 1589 c/s virtual
 
 Benchmarking: Tiger [Tiger 32/64]... (6xOMP) DONE
-Raw:	23556K c/s real, 3939K c/s virtual
+Raw:	23728K c/s real, 3961K c/s virtual
 
 Benchmarking: tc_aes_xts, TrueCrypt AES256_XTS [SHA512/RIPEMD160/WHIRLPOOL 256/256 AVX2 4x]... (6xOMP) DONE
 Speed for cost 1 (hash algorithm [1:SHA512 2:RIPEMD160 3:Whirlpool]) of 1
-Raw:	18640 c/s real, 3173 c/s virtual
+Raw:	18640 c/s real, 3163 c/s virtual
 
 Benchmarking: tc_ripemd160, TrueCrypt AES256_XTS [RIPEMD160 32/64]... (6xOMP) DONE
-Raw:	1548 c/s real, 261 c/s virtual
+Raw:	1560 c/s real, 261 c/s virtual
 
 Benchmarking: tc_ripemd160boot, TrueCrypt AES/Twofish/Serpent [RIPEMD160 32/64]... (6xOMP) DONE
-Raw:	3072 c/s real, 515 c/s virtual
+Raw:	3113 c/s real, 519 c/s virtual
 
 Benchmarking: tc_sha512, TrueCrypt AES256_XTS [SHA512 256/256 AVX2 4x]... (6xOMP) DONE
-Raw:	18837 c/s real, 3179 c/s virtual
+Raw:	19017 c/s real, 3189 c/s virtual
 
 Benchmarking: tc_whirlpool, TrueCrypt AES256_XTS [WHIRLPOOL 32/64]... (6xOMP) DONE
-Raw:	2898 c/s real, 489 c/s virtual
+Raw:	2925 c/s real, 488 c/s virtual
 
 Benchmarking: vdi, VirtualBox-VDI AES_XTS [PBKDF2-SHA256 256/256 AVX2 8x + AES_XTS]... (6xOMP) DONE
-Raw:	8378 c/s real, 1396 c/s virtual
+Raw:	8302 c/s real, 1387 c/s virtual
 
 Benchmarking: OpenVMS, Purdy [32/64]... (6xOMP) DONE
-Many salts:	6044K c/s real, 1029K c/s virtual
-Only one salt:	6151K c/s real, 1030K c/s virtual
+Many salts:	6291K c/s real, 1062K c/s virtual
+Only one salt:	6187K c/s real, 1031K c/s virtual
 
 Benchmarking: vmx, VMware VMX [PBKDF2-SHA1 AES 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (iteration count) of 10000
-Raw:	6192 c/s real, 1049 c/s virtual
+Raw:	6240 c/s real, 1043 c/s virtual
 
 Benchmarking: VNC [DES 32/64]... (6xOMP) DONE
-Many salts:	21430K c/s real, 3583K c/s virtual
-Only one salt:	15581K c/s real, 2601K c/s virtual
+Many salts:	21282K c/s real, 3576K c/s virtual
+Only one salt:	14843K c/s real, 2515K c/s virtual
 
 Benchmarking: vtp, "MD5 based authentication" VTP [MD5 32/64]... (6xOMP) DONE
-Many salts:	4644K c/s real, 788601 c/s virtual
-Only one salt:	35108 c/s real, 5945 c/s virtual
+Many salts:	4343K c/s real, 738742 c/s virtual
+Only one salt:	35446 c/s real, 5945 c/s virtual
 
 Benchmarking: wbb3, WoltLab BB3 [SHA1 32/64]... (6xOMP) DONE
-Many salts:	10960K c/s real, 1835K c/s virtual
-Only one salt:	7809K c/s real, 1312K c/s virtual
+Many salts:	11102K c/s real, 1856K c/s virtual
+Only one salt:	7676K c/s real, 1301K c/s virtual
 
 Benchmarking: whirlpool [WHIRLPOOL 32/64]... (6xOMP) DONE
-Raw:	8564K c/s real, 1451K c/s virtual
+Raw:	8773K c/s real, 1474K c/s virtual
 
 Benchmarking: whirlpool0 [WHIRLPOOL-0 32/64]... (6xOMP) DONE
-Raw:	9756K c/s real, 1648K c/s virtual
+Raw:	9965K c/s real, 1672K c/s virtual
 
 Benchmarking: whirlpool1 [WHIRLPOOL-1 32/64]... (6xOMP) DONE
-Raw:	9266K c/s real, 1584K c/s virtual
+Raw:	9775K c/s real, 1640K c/s virtual
 
 Benchmarking: wpapsk, WPA/WPA2/PMF/PMKID PSK [PBKDF2-SHA1 256/256 AVX2 8x]... (6xOMP) DONE
 Speed for cost 1 (key version [0:PMKID 1:WPA 2:WPA2 3:802.11w]) of 2
-Raw:	15398 c/s real, 2574 c/s virtual
+Raw:	15360 c/s real, 2564 c/s virtual
 
 Benchmarking: wpapsk-pmk, WPA/WPA2/PMF/PMKID master key [MD5/SHA-1/SHA-2]... (6xOMP) DONE
 Speed for cost 1 (key version [0:PMKID 1:WPA 2:WPA2 3:802.11w]) of 1 and 2
-Many salts:	4718K c/s real, 787744 c/s virtual
-Only one salt:	4247K c/s real, 713788 c/s virtual
+Many salts:	4631K c/s real, 788933 c/s virtual
+Only one salt:	4240K c/s real, 710367 c/s virtual
 
 Benchmarking: xmpp-scram [XMPP SCRAM PBKDF2-SHA1 256/256 AVX2 8x]... (6xOMP) DONE
-Raw:	31015 c/s real, 5169 c/s virtual
+Raw:	29825 c/s real, 5094 c/s virtual
 
 Benchmarking: xsha, Mac OS X 10.4 - 10.6 [SHA1 256/256 AVX2 8x]... (6xOMP) DONE
-Many salts:	169138K c/s real, 28667K c/s virtual
-Only one salt:	61747K c/s real, 10395K c/s virtual
+Many salts:	168474K c/s real, 28506K c/s virtual
+Only one salt:	61685K c/s real, 10332K c/s virtual
 
 Benchmarking: xsha512, Mac OS X 10.7 [SHA512 256/256 AVX2 4x]... (6xOMP) DONE
-Many salts:	36274K c/s real, 6065K c/s virtual
-Only one salt:	27131K c/s real, 4552K c/s virtual
+Many salts:	33189K c/s real, 5850K c/s virtual
+Only one salt:	25695K c/s real, 4413K c/s virtual
 
 Benchmarking: ZIP, WinZip [PBKDF2-SHA1 256/256 AVX2 8x]... (6xOMP) DONE
 Raw:	124007 c/s real, 20956 c/s virtual
 
 Benchmarking: ZipMonster, MD5(ZipMonster) [MD5-256/256 AVX2 8x3 x 50000]... (6xOMP) DONE
-Raw:	7200 c/s real, 1215 c/s virtual
+Raw:	7269 c/s real, 1213 c/s virtual
 
 Benchmarking: plaintext, $0$ [n/a]... DONE
-Raw:	121839K c/s real, 121839K c/s virtual
+Raw:	118238K c/s real, 118238K c/s virtual
 
 Benchmarking: has-160 [HAS-160 32/64]... DONE
-Raw:	8278K c/s real, 8278K c/s virtual
+Raw:	8160K c/s real, 8160K c/s virtual
 
 Benchmarking: HMAC-MD5 [password is key, MD5 256/256 AVX2 8x3]... (6xOMP) DONE
-Many salts:	212705K c/s real, 35688K c/s virtual
-Only one salt:	27906K c/s real, 4778K c/s virtual
+Many salts:	199950K c/s real, 34005K c/s virtual
+Only one salt:	28938K c/s real, 4855K c/s virtual
 
 Benchmarking: HMAC-SHA1 [password is key, SHA1 256/256 AVX2 8x]... (6xOMP) DONE
-Many salts:	112459K c/s real, 19158K c/s virtual
-Only one salt:	13685K c/s real, 5247K c/s virtual
+Many salts:	113639K c/s real, 19425K c/s virtual
+Only one salt:	13626K c/s real, 5232K c/s virtual
 
 Benchmarking: HMAC-SHA224 [password is key, SHA224 256/256 AVX2 8x]... (6xOMP) DONE
-Many salts:	44802K c/s real, 7504K c/s virtual
-Only one salt:	14376K c/s real, 2440K c/s virtual
+Many salts:	43831K c/s real, 7366K c/s virtual
+Only one salt:	14622K c/s real, 2445K c/s virtual
 
 Benchmarking: HMAC-SHA256 [password is key, SHA256 256/256 AVX2 8x]... (6xOMP) DONE
-Many salts:	44236K c/s real, 7409K c/s virtual
-Only one salt:	14573K c/s real, 2441K c/s virtual
+Many salts:	44605K c/s real, 7446K c/s virtual
+Only one salt:	14635K c/s real, 2447K c/s virtual
 
 Benchmarking: HMAC-SHA384 [password is key, SHA384 256/256 AVX2 4x]... (6xOMP) DONE
-Many salts:	18101K c/s real, 3037K c/s virtual
-Only one salt:	7178K c/s real, 1198K c/s virtual
+Many salts:	18057K c/s real, 3034K c/s virtual
+Only one salt:	7118K c/s real, 1194K c/s virtual
 
 Benchmarking: HMAC-SHA512 [password is key, SHA512 256/256 AVX2 4x]... (6xOMP) DONE
-Many salts:	18065K c/s real, 3036K c/s virtual
-Only one salt:	7027K c/s real, 1191K c/s virtual
+Many salts:	18378K c/s real, 3068K c/s virtual
+Only one salt:	7113K c/s real, 1193K c/s virtual
 
 Benchmarking: dynamic_0 [md5($p) (raw-md5) 256/256 AVX2 8x3]... DONE
-Raw:	50178K c/s real, 50178K c/s virtual
+Raw:	48461K c/s real, 48461K c/s virtual
 
 Benchmarking: dynamic_1 [md5($p.$s) (joomla) 256/256 AVX2 8x3]... DONE
-Many salts:	25290K c/s real, 25290K c/s virtual
-Only one salt:	18036K c/s real, 18036K c/s virtual
+Many salts:	24968K c/s real, 24968K c/s virtual
+Only one salt:	17861K c/s real, 17861K c/s virtual
 
 Benchmarking: dynamic_2 [md5(md5($p)) (e107) 256/256 AVX2 8x3]... DONE
-Raw:	24981K c/s real, 24981K c/s virtual
+Raw:	24823K c/s real, 24823K c/s virtual
 
 Benchmarking: dynamic_3 [md5(md5(md5($p))) 256/256 AVX2 8x3]... DONE
-Raw:	16716K c/s real, 16716K c/s virtual
+Raw:	16578K c/s real, 16578K c/s virtual
 
 Benchmarking: dynamic_4 [md5($s.$p) (OSC) 256/256 AVX2 8x3]... DONE
-Many salts:	30848K c/s real, 30848K c/s virtual
-Only one salt:	19440K c/s real, 19440K c/s virtual
+Many salts:	30757K c/s real, 30757K c/s virtual
+Only one salt:	19649K c/s real, 19649K c/s virtual
 
 Benchmarking: dynamic_5 [md5($s.$p.$s) 256/256 AVX2 8x3]... DONE
-Many salts:	23388K c/s real, 23388K c/s virtual
-Only one salt:	15946K c/s real, 15946K c/s virtual
+Many salts:	22952K c/s real, 22952K c/s virtual
+Only one salt:	15912K c/s real, 15912K c/s virtual
 
 Benchmarking: dynamic_6 [md5(md5($p).$s) 256/256 AVX2 8x3]... DONE
-Many salts:	45390K c/s real, 45390K c/s virtual
-Only one salt:	13174K c/s real, 13174K c/s virtual
+Many salts:	44335K c/s real, 44335K c/s virtual
+Only one salt:	13107K c/s real, 13107K c/s virtual
 
 Benchmarking: dynamic_8 [md5(md5($s).$p) 256/256 AVX2 8x3]... DONE
-Many salts:	29043K c/s real, 29043K c/s virtual
-Only one salt:	19820K c/s real, 19820K c/s virtual
+Many salts:	29027K c/s real, 29027K c/s virtual
+Only one salt:	19639K c/s real, 19639K c/s virtual
 
 Benchmarking: dynamic_9 [md5($s.md5($p)) 256/256 AVX2 8x3]... DONE
-Many salts:	28455K c/s real, 28455K c/s virtual
-Only one salt:	13224K c/s real, 13224K c/s virtual
+Many salts:	28882K c/s real, 28882K c/s virtual
+Only one salt:	12986K c/s real, 12986K c/s virtual
 
 Benchmarking: dynamic_10 [md5($s.md5($s.$p)) 256/256 AVX2 8x3]... DONE
-Many salts:	14478K c/s real, 14478K c/s virtual
-Only one salt:	11676K c/s real, 11676K c/s virtual
+Many salts:	14448K c/s real, 14448K c/s virtual
+Only one salt:	11712K c/s real, 11712K c/s virtual
 
 Benchmarking: dynamic_11 [md5($s.md5($p.$s)) 256/256 AVX2 8x3]... DONE
-Many salts:	14545K c/s real, 14545K c/s virtual
-Only one salt:	11663K c/s real, 11780K c/s virtual
+Many salts:	14370K c/s real, 14370K c/s virtual
+Only one salt:	11833K c/s real, 11833K c/s virtual
 
 Benchmarking: dynamic_12 [md5(md5($s).md5($p)) (IPB) 256/256 AVX2 8x3]... DONE
-Many salts:	15170K c/s real, 15170K c/s virtual
-Only one salt:	6783K c/s real, 6783K c/s virtual
+Many salts:	15066K c/s real, 15218K c/s virtual
+Only one salt:	6733K c/s real, 6733K c/s virtual
 
 Benchmarking: dynamic_13 [md5(md5($p).md5($s)) 256/256 AVX2 8x3]... DONE
-Many salts:	14589K c/s real, 14589K c/s virtual
-Only one salt:	6582K c/s real, 6582K c/s virtual
+Many salts:	14787K c/s real, 14787K c/s virtual
+Only one salt:	6639K c/s real, 6639K c/s virtual
 
 Benchmarking: dynamic_14 [md5($s.md5($p).$s) 256/256 AVX2 8x3]... DONE
-Many salts:	22774K c/s real, 22774K c/s virtual
-Only one salt:	11729K c/s real, 11729K c/s virtual
+Many salts:	22643K c/s real, 22643K c/s virtual
+Only one salt:	11551K c/s real, 11551K c/s virtual
 
 Benchmarking: dynamic_15 [md5($u.md5($p).$s) 256/256 AVX2 8x3]... DONE
-Many salts:	11662K c/s real, 11662K c/s virtual
-Only one salt:	5752K c/s real, 5752K c/s virtual
+Many salts:	11178K c/s real, 11178K c/s virtual
+Only one salt:	5745K c/s real, 5745K c/s virtual
 
 Benchmarking: dynamic_16 [md5(md5(md5($p).$s).$s2) 256/256 AVX2 8x3]... DONE
-Many salts:	7879K c/s real, 7879K c/s virtual
-Only one salt:	4680K c/s real, 4634K c/s virtual
+Many salts:	7721K c/s real, 7721K c/s virtual
+Only one salt:	4653K c/s real, 4653K c/s virtual
 
 Benchmarking: dynamic_18 [md5($s.Y.$p.0xF7.$s) (Post.Office MD5) 32/64 x2]... DONE
-Many salts:	4068K c/s real, 4068K c/s virtual
-Only one salt:	3806K c/s real, 3769K c/s virtual
+Many salts:	4062K c/s real, 4062K c/s virtual
+Only one salt:	3816K c/s real, 3816K c/s virtual
 
 Benchmarking: dynamic_19 [md5($p) (Cisco PIX) 256/256 AVX2 8x3]... DONE
-Raw:	22807K c/s real, 22807K c/s virtual
+Raw:	22626K c/s real, 22626K c/s virtual
 
 Benchmarking: dynamic_20 [md5($p.$s) (Cisco ASA) 256/256 AVX2 8x3]... DONE
-Many salts:	27824K c/s real, 27824K c/s virtual
-Only one salt:	19118K c/s real, 19118K c/s virtual
+Many salts:	27521K c/s real, 27521K c/s virtual
+Only one salt:	18936K c/s real, 18936K c/s virtual
 
 Benchmarking: dynamic_22 [md5(sha1($p)) 256/256 AVX2 8x1]... DONE
-Raw:	8796K c/s real, 8796K c/s virtual
+Raw:	8893K c/s real, 8893K c/s virtual
 
 Benchmarking: dynamic_23 [sha1(md5($p)) 256/256 AVX2 8x1]... DONE
-Raw:	12264K c/s real, 12264K c/s virtual
+Raw:	12395K c/s real, 12395K c/s virtual
 
 Benchmarking: dynamic_24 [sha1($p.$s) 256/256 AVX2 8x1]... DONE
-Many salts:	12563K c/s real, 12563K c/s virtual
-Only one salt:	10493K c/s real, 10389K c/s virtual
+Many salts:	12838K c/s real, 12838K c/s virtual
+Only one salt:	10553K c/s real, 10553K c/s virtual
 
 Benchmarking: dynamic_25 [sha1($s.$p) 256/256 AVX2 8x1]... DONE
-Many salts:	12626K c/s real, 12626K c/s virtual
-Only one salt:	10493K c/s real, 10493K c/s virtual
+Many salts:	12734K c/s real, 12734K c/s virtual
+Only one salt:	10557K c/s real, 10557K c/s virtual
 
 Benchmarking: dynamic_26 [sha1($p) raw-sha1 256/256 AVX2 8x1]... DONE
-Raw:	14397K c/s real, 14397K c/s virtual
+Raw:	14646K c/s real, 14646K c/s virtual
 
 Benchmarking: dynamic_29 [md5(utf16($p)) 256/256 AVX2 8x3]... DONE
-Raw:	24339K c/s real, 24339K c/s virtual
+Raw:	24044K c/s real, 24044K c/s virtual
 
 Benchmarking: dynamic_30 [md4($p) (raw-md4) 256/256 AVX2 8x3]... DONE
-Raw:	58544K c/s real, 58544K c/s virtual
+Raw:	58171K c/s real, 58171K c/s virtual
 
 Benchmarking: dynamic_31 [md4($s.$p) 256/256 AVX2 8x3]... DONE
-Many salts:	34493K c/s real, 34493K c/s virtual
-Only one salt:	22233K c/s real, 22233K c/s virtual
+Many salts:	34497K c/s real, 34845K c/s virtual
+Only one salt:	22004K c/s real, 22004K c/s virtual
 
 Benchmarking: dynamic_32 [md4($p.$s) 256/256 AVX2 8x3]... DONE
-Many salts:	29255K c/s real, 29255K c/s virtual
-Only one salt:	20203K c/s real, 20203K c/s virtual
+Many salts:	29994K c/s real, 29994K c/s virtual
+Only one salt:	20018K c/s real, 20018K c/s virtual
 
 Benchmarking: dynamic_33 [md4(utf16($p)) 256/256 AVX2 8x3]... DONE
-Raw:	26160K c/s real, 26160K c/s virtual
+Raw:	25724K c/s real, 25724K c/s virtual
 
 Benchmarking: dynamic_34 [md5(md4($p)) 256/256 AVX2 8x3]... DONE
-Raw:	26644K c/s real, 26644K c/s virtual
+Raw:	26423K c/s real, 26423K c/s virtual
 
 Benchmarking: dynamic_35 [sha1(uc($u).:.$p) (ManGOS) 256/256 AVX2 8x1]... DONE
-Many salts:	10315K c/s real, 10315K c/s virtual
-Only one salt:	8991K c/s real, 8991K c/s virtual
+Many salts:	10221K c/s real, 10221K c/s virtual
+Only one salt:	8887K c/s real, 8887K c/s virtual
 
 Benchmarking: dynamic_36 [sha1($u.:.$p) (ManGOS2) 256/256 AVX2 8x1]... DONE
-Many salts:	10284K c/s real, 10284K c/s virtual
-Only one salt:	8840K c/s real, 8840K c/s virtual
+Many salts:	10365K c/s real, 10365K c/s virtual
+Only one salt:	8927K c/s real, 8927K c/s virtual
 
 Benchmarking: dynamic_37 [sha1(lc($u).$p) (SMF) 256/256 AVX2 8x1]... DONE
-Many salts:	12636K c/s real, 12636K c/s virtual
-Only one salt:	10604K c/s real, 10604K c/s virtual
+Many salts:	12804K c/s real, 12804K c/s virtual
+Only one salt:	10688K c/s real, 10688K c/s virtual
 
 Benchmarking: dynamic_38 [sha1($s.sha1($s.sha1($p))) (Wolt3BB) 256/256 AVX2 8x1]... DONE
-Many salts:	3564K c/s real, 3564K c/s virtual
-Only one salt:	3376K c/s real, 3376K c/s virtual
+Many salts:	3484K c/s real, 3484K c/s virtual
+Only one salt:	3293K c/s real, 3326K c/s virtual
 
 Benchmarking: dynamic_39 [md5($s.pad16($p)) (net-md5) 256/256 AVX2 8x3]... DONE
-Many salts:	8813K c/s real, 8813K c/s virtual
-Only one salt:	7859K c/s real, 7859K c/s virtual
+Many salts:	8628K c/s real, 8628K c/s virtual
+Only one salt:	7657K c/s real, 7657K c/s virtual
 
 Benchmarking: dynamic_40 [sha1($s.pad20($p)) (net-sha1) 256/256 AVX2 8x1]... DONE
-Many salts:	9270K c/s real, 9270K c/s virtual
-Only one salt:	8074K c/s real, 8074K c/s virtual
+Many salts:	9586K c/s real, 9586K c/s virtual
+Only one salt:	8339K c/s real, 8339K c/s virtual
 
 Benchmarking: dynamic_50 [sha224($p) 256/256 AVX2 8x]... DONE
-Raw:	9912K c/s real, 9912K c/s virtual
+Raw:	9580K c/s real, 9676K c/s virtual
 
 Benchmarking: dynamic_60 [sha256($p) 256/256 AVX2 8x]... DONE
-Raw:	9868K c/s real, 9868K c/s virtual
+Raw:	9975K c/s real, 9975K c/s virtual
 
 Benchmarking: dynamic_61 [sha256($s.$p) 256/256 AVX2 8x]... DONE
-Many salts:	7539K c/s real, 7539K c/s virtual
-Only one salt:	6736K c/s real, 6736K c/s virtual
+Many salts:	7798K c/s real, 7798K c/s virtual
+Only one salt:	6924K c/s real, 6924K c/s virtual
 
 Benchmarking: dynamic_70 [sha384($p) 256/256 AVX2 4x]... DONE
-Raw:	5271K c/s real, 5271K c/s virtual
+Raw:	5322K c/s real, 5376K c/s virtual
 
 Benchmarking: dynamic_80 [sha512($p) 256/256 AVX2 4x]... DONE
-Raw:	5342K c/s real, 5342K c/s virtual
+Raw:	5379K c/s real, 5379K c/s virtual
 
 Benchmarking: dynamic_90 [gost($p) 64/64]... DONE
-Raw:	572198 c/s real, 577920 c/s virtual
+Raw:	562217 c/s real, 562217 c/s virtual
 
 Benchmarking: dynamic_100 [whirlpool($p) 32/64 OpenSSL]... DONE
-Raw:	1740K c/s real, 1740K c/s virtual
+Raw:	1743K c/s real, 1743K c/s virtual
 
 Benchmarking: dynamic_110 [tiger($p) 32/64 sph_tiger]... DONE
-Raw:	5564K c/s real, 5564K c/s virtual
+Raw:	5843K c/s real, 5843K c/s virtual
 
 Benchmarking: dynamic_120 [ripemd128($p) 32/64 sph_ripemd]... DONE
-Raw:	5218K c/s real, 5218K c/s virtual
+Raw:	5177K c/s real, 5177K c/s virtual
 
 Benchmarking: dynamic_130 [ripemd160($p) 32/64 sph_ripemd]... DONE
-Raw:	3659K c/s real, 3659K c/s virtual
+Raw:	3692K c/s real, 3692K c/s virtual
 
 Benchmarking: dynamic_140 [ripemd256($p) 32/64 sph_ripemd]... DONE
-Raw:	4777K c/s real, 4777K c/s virtual
+Raw:	4929K c/s real, 4929K c/s virtual
 
 Benchmarking: dynamic_150 [ripemd320($p) 32/64 sph_ripemd]... DONE
-Raw:	3474K c/s real, 3474K c/s virtual
+Raw:	3444K c/s real, 3409K c/s virtual
 
 Benchmarking: dynamic_160 [haval128_3($p) 32/64 sph_haval]... DONE
-Raw:	3860K c/s real, 3860K c/s virtual
+Raw:	3853K c/s real, 3853K c/s virtual
 
 Benchmarking: dynamic_170 [haval128_4($p) 32/64 sph_haval]... DONE
-Raw:	2782K c/s real, 2782K c/s virtual
+Raw:	2758K c/s real, 2758K c/s virtual
 
 Benchmarking: dynamic_180 [haval128_5($p) 32/64 sph_haval]... DONE
-Raw:	2348K c/s real, 2348K c/s virtual
+Raw:	2335K c/s real, 2335K c/s virtual
 
 Benchmarking: dynamic_190 [haval160_3($p) 32/64 sph_haval]... DONE
-Raw:	3850K c/s real, 3850K c/s virtual
+Raw:	3785K c/s real, 3823K c/s virtual
 
 Benchmarking: dynamic_200 [haval160_4($p) 32/64 sph_haval]... DONE
 Raw:	2714K c/s real, 2714K c/s virtual
 
 Benchmarking: dynamic_210 [haval160_5($p) 32/64 sph_haval]... DONE
-Raw:	2308K c/s real, 2308K c/s virtual
+Raw:	2318K c/s real, 2318K c/s virtual
 
 Benchmarking: dynamic_220 [haval192_3($p) 32/64 sph_haval]... DONE
-Raw:	3884K c/s real, 3884K c/s virtual
+Raw:	3840K c/s real, 3840K c/s virtual
 
 Benchmarking: dynamic_230 [haval192_4($p) 32/64 sph_haval]... DONE
-Raw:	2768K c/s real, 2768K c/s virtual
+Raw:	2721K c/s real, 2721K c/s virtual
 
 Benchmarking: dynamic_240 [haval192_5($p) 32/64 sph_haval]... DONE
-Raw:	2312K c/s real, 2335K c/s virtual
+Raw:	2331K c/s real, 2331K c/s virtual
 
 Benchmarking: dynamic_250 [haval224_3($p) 32/64 sph_haval]... DONE
-Raw:	3877K c/s real, 3877K c/s virtual
+Raw:	3823K c/s real, 3823K c/s virtual
 
 Benchmarking: dynamic_260 [haval224_4($p) 32/64 sph_haval]... DONE
-Raw:	2765K c/s real, 2765K c/s virtual
+Raw:	2751K c/s real, 2751K c/s virtual
 
 Benchmarking: dynamic_270 [haval224_5($p) 32/64 sph_haval]... DONE
-Raw:	2328K c/s real, 2328K c/s virtual
+Raw:	2288K c/s real, 2288K c/s virtual
 
 Benchmarking: dynamic_280 [haval256_3($p) 32/64 sph_haval]... DONE
-Raw:	3900K c/s real, 3900K c/s virtual
+Raw:	3857K c/s real, 3857K c/s virtual
 
 Benchmarking: dynamic_290 [haval256_4($p) 32/64 sph_haval]... DONE
-Raw:	2785K c/s real, 2785K c/s virtual
+Raw:	2761K c/s real, 2761K c/s virtual
 
 Benchmarking: dynamic_300 [haval256_5($p) 32/64 sph_haval]... DONE
-Raw:	2335K c/s real, 2335K c/s virtual
+Raw:	2318K c/s real, 2318K c/s virtual
 
 Benchmarking: dynamic_310 [md2($p) 32/64 sph_md2]... DONE
-Raw:	159683 c/s real, 161280 c/s virtual
+Raw:	158117 c/s real, 159683 c/s virtual
 
 Benchmarking: dynamic_320 [panama($p) 32/64 sph_panama]... DONE
 Raw:	997920 c/s real, 997920 c/s virtual
 
 Benchmarking: dynamic_330 [skein224($p) 32/64 sph_skein]... DONE
-Raw:	3249K c/s real, 3249K c/s virtual
+Raw:	3228K c/s real, 3228K c/s virtual
 
 Benchmarking: dynamic_340 [skein256($p) 32/64 sph_skein]... DONE
-Raw:	3272K c/s real, 3272K c/s virtual
+Raw:	3252K c/s real, 3252K c/s virtual
 
 Benchmarking: dynamic_350 [skein384($p) 32/64 sph_skein]... DONE
-Raw:	3272K c/s real, 3272K c/s virtual
+Raw:	3235K c/s real, 3268K c/s virtual
 
 Benchmarking: dynamic_360 [skein512($p) 32/64 sph_skein]... DONE
-Raw:	3239K c/s real, 3239K c/s virtual
+Raw:	3178K c/s real, 3178K c/s virtual
 
 Benchmarking: dynamic_370 [sha3_224($p) 64/64 keccak]... DONE
-Raw:	1596K c/s real, 1596K c/s virtual
+Raw:	1579K c/s real, 1579K c/s virtual
 
 Benchmarking: dynamic_380 [sha3_256($p) 64/64 keccak]... DONE
-Raw:	1612K c/s real, 1612K c/s virtual
+Raw:	1602K c/s real, 1602K c/s virtual
 
 Benchmarking: dynamic_390 [sha3_384($p) 64/64 keccak]... DONE
-Raw:	1599K c/s real, 1599K c/s virtual
+Raw:	1602K c/s real, 1586K c/s virtual
 
 Benchmarking: dynamic_400 [sha3_512($p) 64/64 keccak]... DONE
-Raw:	1600K c/s real, 1616K c/s virtual
+Raw:	1585K c/s real, 1585K c/s virtual
 
 Benchmarking: dynamic_410 [keccak_256($p) 64/64 keccak]... DONE
-Raw:	1606K c/s real, 1606K c/s virtual
+Raw:	1585K c/s real, 1585K c/s virtual
 
 Benchmarking: dynamic_420 [keccak_512($p) 64/64 keccak]... DONE
-Raw:	1612K c/s real, 1596K c/s virtual
+Raw:	1602K c/s real, 1602K c/s virtual
 
 Benchmarking: dynamic_1001 [md5(md5(md5(md5($p)))) 256/256 AVX2 8x3]... DONE
-Raw:	11884K c/s real, 11884K c/s virtual
+Raw:	11669K c/s real, 11669K c/s virtual
 
 Benchmarking: dynamic_1002 [md5(md5(md5(md5(md5($p))))) 256/256 AVX2 8x3]... DONE
-Raw:	9512K c/s real, 9512K c/s virtual
+Raw:	9367K c/s real, 9367K c/s virtual
 
 Benchmarking: dynamic_1003 [md5(md5($p).md5($p)) 256/256 AVX2 8x3]... DONE
-Raw:	7187K c/s real, 7187K c/s virtual
+Raw:	7291K c/s real, 7291K c/s virtual
 
 Benchmarking: dynamic_1004 [md5(md5(md5(md5(md5(md5($p)))))) 256/256 AVX2 8x3]... DONE
-Raw:	7909K c/s real, 7909K c/s virtual
+Raw:	7761K c/s real, 7761K c/s virtual
 
 Benchmarking: dynamic_1005 [md5(md5(md5(md5(md5(md5(md5($p))))))) 256/256 AVX2 8x3]... DONE
-Raw:	6773K c/s real, 6773K c/s virtual
+Raw:	6683K c/s real, 6683K c/s virtual
 
 Benchmarking: dynamic_1006 [md5(md5(md5(md5(md5(md5(md5(md5($p)))))))) 256/256 AVX2 8x3]... DONE
-Raw:	5863K c/s real, 5863K c/s virtual
+Raw:	5843K c/s real, 5902K c/s virtual
 
 Benchmarking: dynamic_1007 [md5(md5($p).$s) (vBulletin) 256/256 AVX2 8x3]... DONE
-Many salts:	46643K c/s real, 46643K c/s virtual
-Only one salt:	13356K c/s real, 13356K c/s virtual
+Many salts:	47241K c/s real, 47241K c/s virtual
+Only one salt:	13258K c/s real, 13392K c/s virtual
 
 Benchmarking: dynamic_1008 [md5($p.$s) (RADIUS User-Password) 256/256 AVX2 8x3]... DONE
-Many salts:	26641K c/s real, 26641K c/s virtual
-Only one salt:	18634K c/s real, 18634K c/s virtual
+Many salts:	26678K c/s real, 26678K c/s virtual
+Only one salt:	18523K c/s real, 18523K c/s virtual
 
 Benchmarking: dynamic_1009 [md5($s.$p) (RADIUS Responses) 256/256 AVX2 8x3]... DONE
-Many salts:	32639K c/s real, 32639K c/s virtual
-Only one salt:	20899K c/s real, 20899K c/s virtual
+Many salts:	32356K c/s real, 32356K c/s virtual
+Only one salt:	20986K c/s real, 21198K c/s virtual
 
 Benchmarking: dynamic_1010 [md5($p null_padded_to_len_100) RAdmin v2.x MD5 256/256 AVX2 8x3]... DONE
-Raw:	13013K c/s real, 13013K c/s virtual
+Raw:	12623K c/s real, 12751K c/s virtual
 
 Benchmarking: dynamic_1011 [md5($p.md5($s)) (webEdition CMS) 256/256 AVX2 8x3]... DONE
-Many salts:	10893K c/s real, 10893K c/s virtual
-Only one salt:	9236K c/s real, 9236K c/s virtual
+Many salts:	10936K c/s real, 10936K c/s virtual
+Only one salt:	9263K c/s real, 9263K c/s virtual
 
 Benchmarking: dynamic_1012 [md5($p.md5($s)) (webEdition CMS) 256/256 AVX2 8x3]... DONE
-Many salts:	25606K c/s real, 25606K c/s virtual
-Only one salt:	17693K c/s real, 17693K c/s virtual
+Many salts:	25441K c/s real, 25441K c/s virtual
+Only one salt:	18002K c/s real, 18002K c/s virtual
 
 Benchmarking: dynamic_1013 [md5($p.PMD5(username)) (webEdition CMS) 256/256 AVX2 8x3]... DONE
-Many salts:	25277K c/s real, 25277K c/s virtual
-Only one salt:	18023K c/s real, 18023K c/s virtual
+Many salts:	25284K c/s real, 25284K c/s virtual
+Only one salt:	17764K c/s real, 17764K c/s virtual
 
 Benchmarking: dynamic_1014 [md5($p.$s) (long salt) 256/256 AVX2 8x3]... DONE
-Many salts:	8930K c/s real, 8930K c/s virtual
-Only one salt:	7482K c/s real, 7482K c/s virtual
+Many salts:	8480K c/s real, 8480K c/s virtual
+Only one salt:	7146K c/s real, 7146K c/s virtual
 
 Benchmarking: dynamic_1015 [md5(md5($p.$u).$s) (PostgreSQL 'pass the hash') 256/256 AVX2 8x3]... DONE
-Many salts:	14427K c/s real, 14427K c/s virtual
-Only one salt:	11773K c/s real, 11773K c/s virtual
+Many salts:	14652K c/s real, 14652K c/s virtual
+Only one salt:	11914K c/s real, 11914K c/s virtual
 
 Benchmarking: dynamic_1016 [md5($p.$s) (long salt) 256/256 AVX2 8x3]... DONE
-Many salts:	11004K c/s real, 11004K c/s virtual
-Only one salt:	9327K c/s real, 9327K c/s virtual
+Many salts:	10903K c/s real, 10903K c/s virtual
+Only one salt:	9266K c/s real, 9266K c/s virtual
 
 Benchmarking: dynamic_1017 [md5($s.$p) (long salt) 256/256 AVX2 8x3]... DONE
-Many salts:	9381K c/s real, 9381K c/s virtual
-Only one salt:	8158K c/s real, 8158K c/s virtual
+Many salts:	9068K c/s real, 9068K c/s virtual
+Only one salt:	7922K c/s real, 7922K c/s virtual
 
 Benchmarking: dynamic_1018 [md5(sha1(sha1($p))) 256/256 AVX2 8x1]... DONE
-Raw:	5964K c/s real, 5904K c/s virtual
+Raw:	5802K c/s real, 5802K c/s virtual
 
 Benchmarking: dynamic_1019 [md5(sha1(sha1(md5($p)))) 256/256 AVX2 8x1]... DONE
-Raw:	5681K c/s real, 5681K c/s virtual
+Raw:	5349K c/s real, 5349K c/s virtual
 
 Benchmarking: dynamic_1020 [md5(sha1(md5($p))) 256/256 AVX2 8x1]... DONE
-Raw:	8137K c/s real, 8137K c/s virtual
+Raw:	7966K c/s real, 7966K c/s virtual
 
 Benchmarking: dynamic_1021 [md5(sha1(md5(sha1($p)))) 256/256 AVX2 8x1]... DONE
-Raw:	4636K c/s real, 4636K c/s virtual
+Raw:	4593K c/s real, 4593K c/s virtual
 
 Benchmarking: dynamic_1022 [md5(sha1(md5(sha1(md5($p))))) 256/256 AVX2 8x1]... DONE
-Raw:	4371K c/s real, 4371K c/s virtual
+Raw:	4337K c/s real, 4337K c/s virtual
 
 Benchmarking: dynamic_1023 [sha1($p) (hash truncated to length 32) 256/256 AVX2 8x1]... DONE
-Raw:	14367K c/s real, 14367K c/s virtual
+Raw:	14804K c/s real, 14804K c/s virtual
 
 Benchmarking: dynamic_1024 [sha1(md5($p)) (hash truncated to length 32) 256/256 AVX2 8x1]... DONE
-Raw:	12260K c/s real, 12260K c/s virtual
+Raw:	12556K c/s real, 12556K c/s virtual
 
 Benchmarking: dynamic_1025 [sha1(md5(md5($p))) (hash truncated to length 32) 256/256 AVX2 8x1]... DONE
-Raw:	9606K c/s real, 9606K c/s virtual
+Raw:	9527K c/s real, 9623K c/s virtual
 
 Benchmarking: dynamic_1026 [sha1(sha1($p)) (hash truncated to length 32) 256/256 AVX2 8x1]... DONE
-Raw:	7731K c/s real, 7731K c/s virtual
+Raw:	7869K c/s real, 7869K c/s virtual
 
 Benchmarking: dynamic_1027 [sha1(sha1(sha1($p))) (hash truncated to length 32) 256/256 AVX2 8x1]... DONE
-Raw:	5409K c/s real, 5409K c/s virtual
+Raw:	5419K c/s real, 5419K c/s virtual
 
 Benchmarking: dynamic_1028 [sha1(sha1_raw($p)) (hash truncated to length 32) 256/256 AVX2 8x1]... DONE
-Raw:	7791K c/s real, 7791K c/s virtual
+Raw:	7967K c/s real, 8047K c/s virtual
 
 Benchmarking: dynamic_1029 [sha256($p) (hash truncated to length 32) 256/256 AVX2 8x]... DONE
-Raw:	7852K c/s real, 7852K c/s virtual
+Raw:	7899K c/s real, 7899K c/s virtual
 
 Benchmarking: dynamic_1030 [whirlpool($p) (hash truncated to length 32) 32/64 OpenSSL]... DONE
-Raw:	1676K c/s real, 1660K c/s virtual
+Raw:	1669K c/s real, 1669K c/s virtual
 
 Benchmarking: dynamic_1031 [gost($p) (hash truncated to length 32) 64/64]... DONE
-Raw:	562217 c/s real, 567840 c/s virtual
+Raw:	561120 c/s real, 561120 c/s virtual
 
 Benchmarking: dynamic_1032 [sha1_64(utf16($p)) (PeopleSoft) 256/256 AVX2 8x1]... DONE
-Raw:	10261K c/s real, 10261K c/s virtual
+Raw:	11020K c/s real, 11020K c/s virtual
 
 Benchmarking: dynamic_1034 [md5($p.$u) (PostgreSQL MD5) 256/256 AVX2 8x3]... DONE
-Many salts:	27508K c/s real, 27508K c/s virtual
-Only one salt:	19094K c/s real, 19094K c/s virtual
+Many salts:	27535K c/s real, 27535K c/s virtual
+Only one salt:	19027K c/s real, 19027K c/s virtual
 
 Benchmarking: dynamic_1300 [md5(md5_raw($p)) 256/256 AVX2 8x3]... DONE
-Raw:	17465K c/s real, 17465K c/s virtual
+Raw:	17582K c/s real, 17582K c/s virtual
 
 Benchmarking: dynamic_1350 [md5(md5($s.$p):$s) 256/256 AVX2 8x3]... DONE
-Many salts:	14696K c/s real, 14696K c/s virtual
-Only one salt:	11736K c/s real, 11736K c/s virtual
+Many salts:	14538K c/s real, 14538K c/s virtual
+Only one salt:	11867K c/s real, 11867K c/s virtual
 
 Benchmarking: dynamic_1400 [sha1(utf16($p)) (Microsoft CREDHIST) 256/256 AVX2 8x1]... DONE
-Raw:	9478K c/s real, 9478K c/s virtual
+Raw:	9757K c/s real, 9757K c/s virtual
 
 Benchmarking: dynamic_1401 [md5($u.\nskyper\n.$p) (Skype MD5) 256/256 AVX2 8x3]... DONE
-Many salts:	6777K c/s real, 6777K c/s virtual
-Only one salt:	5819K c/s real, 5819K c/s virtual
+Many salts:	7045K c/s real, 7045K c/s virtual
+Only one salt:	5910K c/s real, 5910K c/s virtual
 
 Benchmarking: dynamic_1501 [sha1($s.sha1($p)) (Redmine) 256/256 AVX2 8x1]... DONE
-Many salts:	9162K c/s real, 9162K c/s virtual
-Only one salt:	4663K c/s real, 4663K c/s virtual
+Many salts:	9341K c/s real, 9434K c/s virtual
+Only one salt:	4872K c/s real, 4872K c/s virtual
 
 Benchmarking: dynamic_1502 [sha1(sha1($p).$s) (XenForo SHA-1) 256/256 AVX2 8x1]... DONE
-Many salts:	16252K c/s real, 16252K c/s virtual
-Only one salt:	6306K c/s real, 6306K c/s virtual
+Many salts:	16420K c/s real, 16420K c/s virtual
+Only one salt:	6330K c/s real, 6330K c/s virtual
 
 Benchmarking: dynamic_1503 [sha256(sha256($p).$s) (XenForo SHA-256) 256/256 AVX2 8x]... DONE
-Many salts:	4697K c/s real, 4744K c/s virtual
-Only one salt:	2909K c/s real, 2909K c/s virtual
+Many salts:	4562K c/s real, 4562K c/s virtual
+Only one salt:	2869K c/s real, 2869K c/s virtual
 
 Benchmarking: dynamic_1504 [sha1($s.$p.$s) 256/256 AVX2 8x1]... DONE
-Many salts:	10321K c/s real, 10321K c/s virtual
-Only one salt:	8887K c/s real, 8887K c/s virtual
+Many salts:	10701K c/s real, 10701K c/s virtual
+Only one salt:	9216K c/s real, 9125K c/s virtual
 
 Benchmarking: dynamic_1505 [md5($p.$s.md5($p.$s)) 256/256 AVX2 8x3]... DONE
-Many salts:	4646K c/s real, 4646K c/s virtual
-Only one salt:	4351K c/s real, 4351K c/s virtual
+Many salts:	4693K c/s real, 4693K c/s virtual
+Only one salt:	4334K c/s real, 4334K c/s virtual
 
 Benchmarking: dynamic_1506 [md5($u.:XDB:.$p) (Oracle 12c "H" hash) 256/256 AVX2 8x3]... DONE
-Many salts:	25777K c/s real, 25777K c/s virtual
-Only one salt:	18090K c/s real, 18090K c/s virtual
+Many salts:	25754K c/s real, 25754K c/s virtual
+Only one salt:	18291K c/s real, 18291K c/s virtual
 
 Benchmarking: dynamic_1507 [sha1(utf16($const.$p)) (Mcafee master pass) 256/256 AVX2 8x1]... DONE
-Raw:	8541K c/s real, 8541K c/s virtual
+Raw:	9209K c/s real, 9118K c/s virtual
 
 Benchmarking: dynamic_1518 [md5(sha1($p).md5($p).sha1($p)) 256/256 AVX2 8x1]... DONE
-Raw:	4119K c/s real, 4119K c/s virtual
+Raw:	4022K c/s real, 4062K c/s virtual
 
 Benchmarking: dynamic_1528 [sha256($s.$p.$s) (Telegram for Android) 256/256 AVX2 8x]... DONE
-Many salts:	7707K c/s real, 7707K c/s virtual
-Only one salt:	6891K c/s real, 6891K c/s virtual
+Many salts:	7734K c/s real, 7734K c/s virtual
+Only one salt:	6982K c/s real, 6982K c/s virtual
 
 Benchmarking: dynamic_1529 [sha1($p null_padded_to_len_32) (DeepSound) 256/256 AVX2 8x1]... DONE
-Raw:	10221K c/s real, 10221K c/s virtual
+Raw:	10802K c/s real, 10802K c/s virtual
 
 Benchmarking: dynamic_1550 [md5($u.:mongo:.$p) (MONGODB-CR system hash) 256/256 AVX2 8x3]... DONE
-Many salts:	23402K c/s real, 23402K c/s virtual
-Only one salt:	16860K c/s real, 16860K c/s virtual
+Many salts:	23745K c/s real, 23745K c/s virtual
+Only one salt:	16662K c/s real, 16662K c/s virtual
 
 Benchmarking: dynamic_1551 [md5($s.$u.(md5($u.:mongo:.$p)) (MONGODB-CR network hash) 256/256 AVX2 8x3]... DONE
-Many salts:	11850K c/s real, 11850K c/s virtual
-Only one salt:	9982K c/s real, 9982K c/s virtual
+Many salts:	12109K c/s real, 12109K c/s virtual
+Only one salt:	10177K c/s real, 10177K c/s virtual
 
 Benchmarking: dynamic_1552 [md5($s.$u.(md5($u.:mongo:.$p)) (MONGODB-CR network hash) 256/256 AVX2 8x3]... DONE
-Many salts:	5332K c/s real, 5332K c/s virtual
-Only one salt:	4895K c/s real, 4895K c/s virtual
+Many salts:	5426K c/s real, 5426K c/s virtual
+Only one salt:	4986K c/s real, 4986K c/s virtual
 
 Benchmarking: dynamic_1560 [md5($s.$p.$s2) (SocialEngine) 256/256 AVX2 8x3]... DONE
-Many salts:	9512K c/s real, 9512K c/s virtual
-Only one salt:	8285K c/s real, 8285K c/s virtual
+Many salts:	9821K c/s real, 9821K c/s virtual
+Only one salt:	8218K c/s real, 8218K c/s virtual
 
 Benchmarking: dynamic_1588 [sha256($s.sha1($p)) (ColdFusion 11) 256/256 AVX2 8x]... DONE
-Many salts:	4374K c/s real, 4374K c/s virtual
-Only one salt:	4126K c/s real, 4126K c/s virtual
+Many salts:	4398K c/s real, 4398K c/s virtual
+Only one salt:	4095K c/s real, 4095K c/s virtual
 
 Benchmarking: dynamic_1590 [sha1(utf16be(space_pad_10(uc($s)).$p)) (IBM AS/400 SHA1) 256/256 AVX2 8x1]... DONE
-Many salts:	12415K c/s real, 12415K c/s virtual
-Only one salt:	10550K c/s real, 10550K c/s virtual
+Many salts:	12650K c/s real, 12650K c/s virtual
+Only one salt:	10439K c/s real, 10439K c/s virtual
 
 Benchmarking: dynamic_1592 [sha1($s.sha1($s.sha1($p))) (wbb3) 256/256 AVX2 8x1]... DONE
-Many salts:	5113K c/s real, 5113K c/s virtual
-Only one salt:	3249K c/s real, 3249K c/s virtual
+Many salts:	5093K c/s real, 5093K c/s virtual
+Only one salt:	3346K c/s real, 3346K c/s virtual
 
 Benchmarking: dynamic_1600 [sha1($s.utf16le($p)) (Oracle PeopleSoft PS_TOKEN) 256/256 AVX2 8x1]... DONE
-Many salts:	7237K c/s real, 7237K c/s virtual
-Only one salt:	5927K c/s real, 5927K c/s virtual
+Many salts:	7143K c/s real, 7072K c/s virtual
+Only one salt:	5896K c/s real, 5896K c/s virtual
 
 Benchmarking: dynamic_1602 [sha256(#.$salt.-.$pass) (QAS vas_auth) 256/256 AVX2 8x]... DONE
-Many salts:	5913K c/s real, 5913K c/s virtual
-Only one salt:	5409K c/s real, 5409K c/s virtual
+Many salts:	5951K c/s real, 5951K c/s virtual
+Only one salt:	5436K c/s real, 5436K c/s virtual
 
 Benchmarking: dynamic_1608 [sha256(sha256_raw(sha256_raw($p))) (Neo Wallet) 256/256 AVX2 8x]... DONE
-Raw:	3538K c/s real, 3538K c/s virtual
+Raw:	3551K c/s real, 3551K c/s virtual
 
 Benchmarking: dynamic_2000 [md5($p) (PW > 55 bytes) 256/256 AVX2 8x3]... DONE
-Raw:	17556K c/s real, 17556K c/s virtual
+Raw:	17912K c/s real, 17912K c/s virtual
 
 Benchmarking: dynamic_2001 [md5($p.$s) (joomla) (PW > 23 bytes) 256/256 AVX2 8x3]... DONE
-Many salts:	15472K c/s real, 15472K c/s virtual
-Only one salt:	12445K c/s real, 12445K c/s virtual
+Many salts:	15304K c/s real, 15304K c/s virtual
+Only one salt:	12331K c/s real, 12331K c/s virtual
 
 Benchmarking: dynamic_2002 [md5(md5($p)) (e107) (PW > 55 bytes) 256/256 AVX2 8x3]... DONE
-Raw:	9707K c/s real, 9707K c/s virtual
+Raw:	9599K c/s real, 9599K c/s virtual
 
 Benchmarking: dynamic_2003 [md5(md5(md5($p))) (PW > 55 bytes) 256/256 AVX2 8x3]... DONE
-Raw:	6884K c/s real, 6884K c/s virtual
+Raw:	6847K c/s real, 6847K c/s virtual
 
 Benchmarking: dynamic_2004 [md5($s.$p) (OSC) (PW > 31 bytes) 256/256 AVX2 8x3]... DONE
-Many salts:	14626K c/s real, 14626K c/s virtual
-Only one salt:	11901K c/s real, 11901K c/s virtual
+Many salts:	15240K c/s real, 15240K c/s virtual
+Only one salt:	12099K c/s real, 12220K c/s virtual
 
 Benchmarking: dynamic_2005 [md5($s.$p.$s) (PW > 31 bytes) 256/256 AVX2 8x3]... DONE
-Many salts:	11874K c/s real, 11874K c/s virtual
-Only one salt:	10254K c/s real, 10254K c/s virtual
+Many salts:	11951K c/s real, 11951K c/s virtual
+Only one salt:	10069K c/s real, 10069K c/s virtual
 
 Benchmarking: dynamic_2006 [md5(md5($p).$s) (PW > 55 bytes) 256/256 AVX2 8x3]... DONE
-Many salts:	20344K c/s real, 20344K c/s virtual
-Only one salt:	7617K c/s real, 7617K c/s virtual
+Many salts:	20818K c/s real, 20818K c/s virtual
+Only one salt:	7650K c/s real, 7650K c/s virtual
 
 Benchmarking: dynamic_2008 [md5(md5($s).$p) (PW > 23 bytes) 256/256 AVX2 8x3]... DONE
-Many salts:	15718K c/s real, 15718K c/s virtual
-Only one salt:	12542K c/s real, 12542K c/s virtual
+Many salts:	15193K c/s real, 15193K c/s virtual
+Only one salt:	12297K c/s real, 12297K c/s virtual
 
 Benchmarking: dynamic_2009 [md5($s.md5($p)) (salt > 23 bytes) 256/256 AVX2 8x3]... DONE
-Many salts:	15046K c/s real, 15046K c/s virtual
-Only one salt:	6481K c/s real, 6481K c/s virtual
+Many salts:	14717K c/s real, 14864K c/s virtual
+Only one salt:	6578K c/s real, 6578K c/s virtual
 
 Benchmarking: dynamic_2010 [md5($s.md5($s.$p)) (PW > 32 or salt > 23 bytes) 256/256 AVX2 8x3]... DONE
-Many salts:	7422K c/s real, 7422K c/s virtual
-Only one salt:	6649K c/s real, 6649K c/s virtual
+Many salts:	7523K c/s real, 7523K c/s virtual
+Only one salt:	6753K c/s real, 6753K c/s virtual
 
 Benchmarking: dynamic_2011 [md5($s.md5($p.$s)) (PW > 32 or salt > 23 bytes) 256/256 AVX2 8x3]... DONE
-Many salts:	7442K c/s real, 7442K c/s virtual
-Only one salt:	6652K c/s real, 6652K c/s virtual
+Many salts:	7512K c/s real, 7512K c/s virtual
+Only one salt:	6746K c/s real, 6746K c/s virtual
 
 Benchmarking: dynamic_2014 [md5($s.md5($p).$s) (PW > 55 or salt > 11 bytes) 256/256 AVX2 8x3]... DONE
-Many salts:	11803K c/s real, 11803K c/s virtual
-Only one salt:	5819K c/s real, 5819K c/s virtual
+Many salts:	11464K c/s real, 11464K c/s virtual
+Only one salt:	5802K c/s real, 5802K c/s virtual
 
 Benchmarking: dummy [N/A]... DONE
-Raw:	75936K c/s real, 75936K c/s virtual
+Raw:	75660K c/s real, 75660K c/s virtual
 
 Benchmarking: crypt, generic crypt(3) [?/64]... (6xOMP) DONE
 Speed for cost 1 (algorithm [1:descrypt 2:md5crypt 3:sunmd5 4:bcrypt 5:sha256crypt 6:sha512crypt]) of 1, cost 2 (algorithm specific iterations) of 1
-Many salts:	1880K c/s real, 314982 c/s virtual
-Only one salt:	1843K c/s real, 307200 c/s virtual
+Many salts:	1861K c/s real, 311847 c/s virtual
+Only one salt:	1778K c/s real, 299393 c/s virtual
 
-All 407 formats passed self-tests! 
+All 407 formats passed self-tests!
