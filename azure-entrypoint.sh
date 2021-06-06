@@ -11,14 +11,12 @@ blacklist nouveau
 blacklist lbm-nouveau
 EOT
 
-# Set up CUDA drivers: http://developer.download.nvidia.com/compute/cuda/repos/
-CUDA_REPO_PKG=cuda-repo-ubuntu1804_10.2.89-1_amd64.deb
-wget --quiet -O /tmp/${CUDA_REPO_PKG} https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/${CUDA_REPO_PKG}
-dpkg -i /tmp/${CUDA_REPO_PKG}
-apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub
-rm -f /tmp/${CUDA_REPO_PKG}
+# Set up CUDA Toolkit: https://developer.nvidia.com/cuda-downloads
+wget --quiet -O /etc/apt/preferences.d/cuda-repository-pin-600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
+apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
+add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"
 apt-get update
-apt-get install -y cuda-drivers nvidia-cuda-toolkit
+apt-get -y install nvidia-driver-465 cuda-toolkit-11-3
 
 # Install Hashcat
 HASHCAT_SRC_PKG=hashcat-6.2.1
@@ -30,8 +28,8 @@ make && make install
 # Install John the Ripper
 snap install john-the-ripper
 
-# Install some wordlists
-wget https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt -O /opt/rockyou.txt
+# Install and reference some wordlists
+wget --quiet -O /opt/rockyou.txt https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt
 
 cat <<EOF > /opt/wordlists.txt
 Get some additional wordlists here:
@@ -40,3 +38,6 @@ Get some additional wordlists here:
 * https://github.com/danielmiessler/SecLists
 * https://github.com/FlameOfIgnis/Pwdb-Public
 EOF
+
+# Reboot (recommended by CUDA installers)
+reboot
