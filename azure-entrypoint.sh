@@ -21,7 +21,7 @@ apt-get update
 apt-get install -y cuda-drivers nvidia-cuda-toolkit
 
 # Install Hashcat
-HASHCAT_SRC_PKG=hashcat-6.1.1
+HASHCAT_SRC_PKG=hashcat-6.2.1
 wget https://hashcat.net/files/${HASHCAT_SRC_PKG}.tar.gz
 tar -xf ${HASHCAT_SRC_PKG}.tar.gz
 cd ${HASHCAT_SRC_PKG}
@@ -31,11 +31,12 @@ make && make install
 snap install john-the-ripper
 
 # Install some wordlists
-mkdir /opt/wordlists
-cd /opt/wordlists
-wget --quiet https://crackstation.net/files/crackstation-human-only.txt.gz && gunzip crackstation-human-only.txt.gz
-# wget --quiet https://crackstation.net/files/crackstation.txt.gz && gunzip -d crackstation.txt.gz
-wget https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt
-wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/darkweb2017-top1000.txt
-wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/darkweb2017-top10000.txt
-wget https://github.com/FlameOfIgnis/Pwdb-Public/raw/master/wordlists/ignis-10M.txt
+wget https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt -O /opt/rockyou.txt
+
+cat <<EOF > /opt/wordlists.txt
+Get some additional wordlists here:
+* https://weakpass.com/download
+* https://crackstation.net/crackstation-wordlist-password-cracking-dictionary.htm
+* https://github.com/danielmiessler/SecLists
+* https://github.com/FlameOfIgnis/Pwdb-Public
+EOF
