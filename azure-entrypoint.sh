@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 DEBIAN_FRONTEND=noninteractive
 
 # Install required packages
@@ -16,10 +17,10 @@ wget --quiet -O /etc/apt/preferences.d/cuda-repository-pin-600 https://developer
 apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
 add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"
 apt-get update
-apt-get -y install nvidia-driver-465 cuda-toolkit-11-3
+apt-get -y install nvidia-headless-495 cuda-toolkit-11-5
 
 # Install Hashcat
-HASHCAT_SRC_PKG=hashcat-6.2.1
+HASHCAT_SRC_PKG=hashcat-6.2.3
 wget https://hashcat.net/files/${HASHCAT_SRC_PKG}.tar.gz
 tar -xf ${HASHCAT_SRC_PKG}.tar.gz
 cd ${HASHCAT_SRC_PKG}
