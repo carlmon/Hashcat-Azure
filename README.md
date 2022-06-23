@@ -1,4 +1,4 @@
-[![Deploy to Azure](https://azuredeploy.net/deploybutton.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fcarlmon%2FHashcat-Azure%2Fmaster%2Fazuredeploy.json) [![Visualize](http://armviz.io/visualizebutton.png)](http://armviz.io/#?load=https%3A%2F%2Fraw.githubusercontent.com%2Fcarlmon%2FHashcat-Azure%2Fmaster%2Fazuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fcarlmon%2FHashcat-Azure%2Fmaster%2Fazuredeploy.json) [![Visualize](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.svg)](http://armviz.io/#?load=https%3A%2F%2Fraw.githubusercontent.com%2Fcarlmon%2FHashcat-Azure%2Fmaster%2Fazuredeploy.json)
 
 # Hashcat Azure
 
