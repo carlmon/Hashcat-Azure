@@ -3,8 +3,7 @@ set -e
 DEBIAN_FRONTEND=noninteractive
 
 # Install required packages
-apt-get update
-apt-get install -y apt-transport-https build-essential
+apt update && apt install -y apt-transport-https build-essential
 
 # Blacklist nouveau drivers
 cat <<EOT >> /etc/modprobe.d/nouveau.conf
@@ -13,14 +12,15 @@ blacklist lbm-nouveau
 EOT
 
 # Set up CUDA Toolkit: https://developer.nvidia.com/cuda-downloads
-wget --quiet -O /etc/apt/preferences.d/cuda-repository-pin-600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
-apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
-add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"
-apt-get update
-apt-get -y install nvidia-headless-495 cuda-toolkit-11-5
+wget --quiet -O /etc/apt/preferences.d/cuda-repository-pin-600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-ubuntu2204.pin
+wget --quiet -O ./nvidia.pub https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/3bf863cc.pub
+gpg --no-default-keyring --keyring ./nvidia_keyring.gpg --import ./nvidia.pub
+gpg --no-default-keyring --keyring ./nvidia_keyring.gpg --export > /etc/apt/trusted.gpg.d/nvidia.gpg
+add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/ /" -y
+apt update && apt install -y nvidia-headless-515 cuda-toolkit-11-7
 
 # Install Hashcat
-HASHCAT_SRC_PKG=hashcat-6.2.3
+HASHCAT_SRC_PKG=hashcat-6.2.5
 wget https://hashcat.net/files/${HASHCAT_SRC_PKG}.tar.gz
 tar -xf ${HASHCAT_SRC_PKG}.tar.gz
 cd ${HASHCAT_SRC_PKG}
