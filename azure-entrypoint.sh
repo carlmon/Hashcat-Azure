@@ -17,10 +17,10 @@ wget --quiet -O ./nvidia.pub https://developer.download.nvidia.com/compute/cuda/
 gpg --no-default-keyring --keyring ./nvidia_keyring.gpg --import ./nvidia.pub
 gpg --no-default-keyring --keyring ./nvidia_keyring.gpg --export > /etc/apt/trusted.gpg.d/nvidia.gpg
 add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/ /" -y
-apt update && apt install -y nvidia-headless-515 cuda-toolkit-11-7
+apt update && apt install -y nvidia-headless-530 cuda-toolkit-12-1
 
 # Install Hashcat
-HASHCAT_SRC_PKG=hashcat-6.2.5
+HASHCAT_SRC_PKG=hashcat-6.2.6
 wget https://hashcat.net/files/${HASHCAT_SRC_PKG}.tar.gz
 tar -xf ${HASHCAT_SRC_PKG}.tar.gz
 cd ${HASHCAT_SRC_PKG}
